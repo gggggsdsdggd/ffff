@@ -1,5 +1,5 @@
 -- Inline script code (for reference or direct execution)
-local MAIN_USERID = 123456789  -- Your main account's UserId (number)
+local MAIN_USERID = 5081423380  -- Your main account's UserId (number)
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
