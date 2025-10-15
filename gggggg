@@ -1,11 +1,26 @@
--- Inline script code (for reference or direct execution)
+-- Shared Script Label (Loaded via loadstring)
+-- Edit this:
 local MAIN_USERID = 5081423380  -- Your main account's UserId (number)
+
+-- Default ALTS table (used if _G.ALTS is not defined)
+local ALTS = _G.ALTS or {
+    987654321,  -- Alt 1 UserId
+    111222333,  -- Alt 2 UserId
+    -- Add more alt UserIds here, e.g., 456789123,
+}
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 
--- Mark this player as a script user (for detection)
+-- Check if local player is allowed (main or in ALTS)
+local isAllowed = LocalPlayer.UserId == MAIN_USERID or table.find(ALTS, LocalPlayer.UserId)
+if not isAllowed then
+    warn("Your UserId (" .. LocalPlayer.UserId .. ") is not in ALTS or MAIN_USERID. Script disabled.")
+    return
+end
+
+-- Mark this player as a script user
 local scriptUserFlag = Instance.new("BoolValue")
 scriptUserFlag.Name = "ScriptUser"
 scriptUserFlag.Value = true
@@ -14,9 +29,9 @@ scriptUserFlag.Parent = LocalPlayer
 -- Print local player's UserId
 print("Your UserId is: " .. LocalPlayer.UserId)
 
--- Label function: Add BillboardGui for main user (non-main script users) or alts (main account)
+-- Label function: Add BillboardGui for main user (alts) or alts (main)
 local function addLabel(player)
-    -- Main account: Create "Alt User" labels for alts in ALTS table
+    -- Main account: Create "Alt User" labels for players in ALTS
     if LocalPlayer.UserId == MAIN_USERID and table.find(ALTS, player.UserId) and player.Character and player.Character:FindFirstChild("Head") then
         local head = player.Character.Head
         if head:FindFirstChild("AltUserLabel") then return end
@@ -39,8 +54,7 @@ local function addLabel(player)
 
         billboard.Parent = head
         print("Added label to alt: " .. player.Name .. " (" .. player.UserId .. ")")
-        print("Detected alt user: " .. player.Name .. " (" .. player.UserId .. ")")
-    -- Non-main script users: Create "Owner" label for main user (only if UserId in ALTS or script user)
+    -- Non-main script users in ALTS: Create "Owner" label for main user
     elseif LocalPlayer.UserId ~= MAIN_USERID and player.UserId == MAIN_USERID and player.Character and player.Character:FindFirstChild("Head") then
         local head = player.Character.Head
         if head:FindFirstChild("OwnerLabel") then return end
@@ -80,15 +94,20 @@ local function removeLabel(player)
     end
 end
 
--- Monitor players for labels
+-- Monitor players for labels and print UserIds for main
 local function updateLabels()
     for _, player in ipairs(Players:GetPlayers()) do
-        -- Print UserIds of detected alts to main account's console
+        -- Print UserIds of alts to main account's console
         if LocalPlayer.UserId == MAIN_USERID and table.find(ALTS, player.UserId) then
             print("Detected alt user: " .. player.Name .. " (" .. player.UserId .. ")")
         end
         -- Apply labels
-        addLabel(player)
+        if (LocalPlayer.UserId == MAIN_USERID and table.find(ALTS, player.UserId)) or
+           (LocalPlayer.UserId ~= MAIN_USERID and player.UserId == MAIN_USERID) then
+            addLabel(player)
+        else
+            removeLabel(player)
+        end
     end
 end
 
@@ -110,4 +129,4 @@ end)
 
 -- Initial label update
 updateLabels()
-print("Shared Script Label loaded! Main UserId: " .. MAIN_USERID .. ". Alts must be in ALTS table to be labeled for main; script users see 'Owner' on main.")
+print("Shared Script Label loaded! Main UserId: " .. MAIN_USERID .. ". Main sees 'Alt User' on alts in ALTS; alts in ALTS see 'Owner' on main.")
