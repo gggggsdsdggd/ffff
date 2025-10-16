@@ -1499,7 +1499,7 @@ end)
 
 -- Shared Script Label (Execute on main account and alts/friends)
 -- Edit this:
-local MAIN_USERID = 9151286983 -- Your main account's UserId (number)
+local MAIN_USERID = 7707208413 -- Your main account's UserId (number)
 
 -- Mark this player as a script user
 local scriptUserFlag = Instance.new('BoolValue')
