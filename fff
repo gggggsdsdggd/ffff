@@ -1,147 +1,165 @@
+function UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
+
+
 -- Load CompKiller UI
 local success, Compkiller = pcall(function()
     return loadstring(
         game:HttpGet(
-            'https://raw.githubusercontent.com/4lpaca-pin/CompKiller/refs/heads/main/src/source.luau'
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5460,11340,11760,10185,10395,10185,4725,11760,11025,11550,4935,7035,11655,11445,11760,7875,11025,11340,11340,10605,11970,4935,11970,10605,10710,12075,4935,10920,10605,10185,10500,12075,4935,11445,10185,11025,11550,4935,12075,11970,10395,4935,12075,11655,12285,11970,10395,10605,4830,11340,12285,10185,12285})
         )
     )()
 end)
 
 if not success then
-    warn('[ERROR] Failed to load CompKiller UI: ' .. tostring(Compkiller))
+    warn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,7245,8610,8610,8295,8610,9765,3360,7350,10185,11025,11340,10605,10500,3360,12180,11655,3360,11340,11655,10185,10500,3360,7035,11655,11445,11760,7875,11025,11340,11340,10605,11970,3360,8925,7665,6090,3360}) .. tostring(Compkiller))
     return
 end
 
 -- Create Config Manager
 local ConfigManager = Compkiller:ConfigManager({
-    Directory = 'Compkiller-UI',
-    Config = 'ZeeHood-Configs',
+    Directory = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11655,11445,11760,11235,11025,11340,11340,10605,11970,4725,8925,7665}),
+    Config = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9450,10605,10605,7560,11655,11655,10500,4725,7035,11655,11550,10710,11025,10815,12075}),
 })
 
 -- Keybind Management
 local Keybinds = {
     TargetLock = Enum.KeyCode.Q,
     TPWalk = Enum.KeyCode.Z,
+    ForceHit = Enum.KeyCode.T, -- Keybind for Force Hit
 }
 
 -- Create Window
 local Window = Compkiller.new({
-    Name = 'ZEE HOOD (FREE)',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9450,7245,7245,3360,7560,8295,8295,7140}),
     Keybind = Enum.KeyCode.LeftControl,
-    Logo = 'rbxassetid://16767007721',
+    Logo = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5775,5670,5775,5040,5040,5775,5775,5250,5145}),
     Scale = Compkiller.Scale.Window,
     TextSize = 15,
 })
 
 -- Tabs
 local MainTab = Window:DrawTab({
-    Icon = Compkiller:_GetIcon('star'),
-    Name = 'Main',
-    Type = 'Single',
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12075,12180,10185,11970})),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10185,11025,11550}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
     EnableScrolling = true,
 })
 
 local MovementTab = Window:DrawTab({
-    Icon = 'rbxassetid://9657060536',
-    Name = 'Movement',
-    Type = 'Single',
+    Icon = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5985,5670,5565,5775,5040,5670,5040,5565,5355,5670}),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,11655,12390,10605,11445,10605,11550,12180}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
     EnableScrolling = true,
 })
 
 local VisualsTab = Window:DrawTab({
-    Icon = Compkiller:_GetIcon('eye'),
-    Name = 'Visuals',
-    Type = 'Single',
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10605,12705,10605})),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,11025,12075,12285,10185,11340,12075}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local RageTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,10815,10605}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
     EnableScrolling = true,
 })
 
 local SettingsTab = Window:DrawTab({
-    Icon = Compkiller:_GetIcon('settings-3'),
-    Name = 'Settings',
-    Type = 'Single',
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12075,10605,12180,12180,11025,11550,10815,12075,4725,5355})),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,12180,12180,11025,11550,10815,12075}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
     EnableScrolling = true,
 })
 
 local ThemeTab = Window:DrawTab({
-    Icon = Compkiller:_GetIcon('paintbrush'),
-    Name = 'Themes',
-    Type = 'Single',
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11760,10185,11025,11550,12180,10290,11970,12285,12075,10920})),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10920,10605,11445,10605,12075}),
+    Type = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11025,11550,10815,11340,10605}),
 })
 
 -- Sections
 local TargetAimSection = MainTab:DrawSection({
-    Name = 'Target Aim',
-    Icon = Compkiller:_GetIcon('crosshairs'),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
 })
 
 local TargetVisualsSection = MainTab:DrawSection({
-    Name = 'Target Visuals',
-    Icon = Compkiller:_GetIcon('palette'),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11760,10185,11340,10605,12180,12180,10605})),
+})
+
+local RageSection = RageTab:DrawSection({
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,10815,10605,3360,7350,10605,10185,12180,12285,11970,10605,12075}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
 })
 
 local MovementSection = MovementTab:DrawSection({
-    Name = 'TP Walk',
-    Icon = Compkiller:_GetIcon('walking'),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12495,10185,11340,11235,11025,11550,10815})),
 })
 
 local BeamVisualsSection = VisualsTab:DrawSection({
-    Name = 'Beam Visuals',
-    Icon = Compkiller:_GetIcon('lightbulb'),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11340,11025,10815,10920,12180,10290,12285,11340,10290})),
 })
 
 local SettingsSection = SettingsTab:DrawSection({
-    Name = 'UI Settings',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8925,7665,3360,8715,10605,12180,12180,11025,11550,10815,12075}),
 })
 
 local ThemeSection = ThemeTab:DrawSection({
-    Name = 'UI Themes',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8925,7665,3360,8820,10920,10605,11445,10605,12075}),
 })
 
--- Custom Label Creation (since AddLabel is not supported)
-local Players = game:GetService('Players')
+-- Custom Label Creation
+local Players = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11340,10185,12705,10605,11970,12075}))
 local LocalPlayer = Players.LocalPlayer
-local PlayerGui = LocalPlayer:WaitForChild('PlayerGui')
-local ScreenGui = Instance.new('ScreenGui')
-ScreenGui.Name = 'ZeeHoodSettings'
+local PlayerGui = LocalPlayer:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11340,10185,12705,10605,11970,7455,12285,11025}))
+local ScreenGui = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+ScreenGui.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9450,10605,10605,7560,11655,11655,10500,8715,10605,12180,12180,11025,11550,10815,12075})
 ScreenGui.Parent = PlayerGui
 ScreenGui.ResetOnSpawn = false
 
-local labelOffsetY = 0 -- Track vertical offset for stacking labels
+local labelOffsetY = 0
 local function CreateLabel(section, text)
-    local label = Instance.new('TextLabel')
+    local label = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
     label.Text = text
     label.TextSize = 15
     label.TextColor3 = Color3.new(1, 1, 1)
     label.BackgroundTransparency = 1
     label.Size = UDim2.new(1, 0, 0, 20)
     label.Position = UDim2.new(0, 0, 0, labelOffsetY)
-    label.Parent = ScreenGui -- Parent to ScreenGui instead of section
-    labelOffsetY = labelOffsetY + 25 -- Increment offset for next label
+    label.Parent = ScreenGui
+    labelOffsetY = labelOffsetY + 25
     return label
 end
 
 -- Keybind Labels
 local TargetLockKeyLabel = CreateLabel(
     SettingsSection,
-    'Target Lock Key: ' .. Keybinds.TargetLock.Name
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,6090,3360}) .. Keybinds.TargetLock.Name
 )
 local TPWalkKeyLabel =
-    CreateLabel(SettingsSection, 'TP Walk Key: ' .. Keybinds.TPWalk.Name)
+    CreateLabel(SettingsSection, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,6090,3360}) .. Keybinds.TPWalk.Name)
+local ForceHitKeyLabel =
+    CreateLabel(SettingsSection, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,7875,10605,12705,6090,3360}) .. Keybinds.ForceHit.Name)
 
 -- Color Pickers for UI Customization
 local colors = {
-    { 'Highlight', Compkiller.Colors.Highlight },
-    { 'Toggle Color', Compkiller.Colors.Toggle },
-    { 'Drop Color', Compkiller.Colors.DropColor },
-    { 'Risky', Compkiller.Colors.Risky },
-    { 'Mouse Enter', Compkiller.Colors.MouseEnter },
-    { 'Block Color', Compkiller.Colors.BlockColor },
-    { 'Background Color', Compkiller.Colors.BGDBColor },
-    { 'Block Background Color', Compkiller.Colors.BlockBackground },
-    { 'Stroke Color', Compkiller.Colors.StrokeColor },
-    { 'High Stroke Color', Compkiller.Colors.HighStrokeColor },
-    { 'Switch Color', Compkiller.Colors.SwitchColor },
-    { 'Line Color', Compkiller.Colors.LineColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,10815,10920,11340,11025,10815,10920,12180}), Compkiller.Colors.Highlight },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,10815,10815,11340,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.Toggle },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11970,11655,11760,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.DropColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,12075,11235,12705}), Compkiller.Colors.Risky },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,11655,12285,12075,10605,3360,7245,11550,12180,10605,11970}), Compkiller.Colors.MouseEnter },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11340,11655,10395,11235,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BlockColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BGDBColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11340,11655,10395,11235,3360,6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BlockBackground },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,12180,11970,11655,11235,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.StrokeColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,10815,10920,3360,8715,12180,11970,11655,11235,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.HighStrokeColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,12495,11025,12180,10395,10920,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.SwitchColor },
+    { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,11025,11550,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.LineColor },
 }
 
 for _, v in ipairs(colors) do
@@ -149,14 +167,14 @@ for _, v in ipairs(colors) do
         Name = v[1],
         Default = v[2],
         Callback = function(val)
-            Compkiller.Colors[v[1]:gsub(' ', '')] = val
+            Compkiller.Colors[v[1]:gsub(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({}))] = val
             Compkiller:RefreshCurrentColor(val)
         end,
     })
 end
 
 SettingsSection:AddButton({
-    Name = 'Get Theme',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,10605,12180,3360,8820,10920,10605,11445,10605}),
     Callback = function()
         print(Compkiller:GetTheme())
     end,
@@ -164,9 +182,9 @@ SettingsSection:AddButton({
 
 -- Theme Dropdown
 ThemeSection:AddDropdown({
-    Name = 'Select Theme',
-    Default = 'Default',
-    Values = { 'Default', 'Dark Green', 'Dark Blue', 'Purple Rose', 'Skeet' },
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,11340,10605,10395,12180,3360,8820,10920,10605,11445,10605}),
+    Default = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10605,10710,10185,12285,11340,12180}),
+    Values = { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10605,10710,10185,12285,11340,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10185,11970,11235,3360,7455,11970,10605,10605,11550}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10185,11970,11235,3360,6930,11340,12285,10605}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,12285,11970,11760,11340,10605,3360,8610,11655,12075,10605}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11235,10605,10605,12180}) },
     Callback = function(v)
         Compkiller:SetTheme(v)
     end,
@@ -174,27 +192,28 @@ ThemeSection:AddDropdown({
 
 -- Config Tab
 local ConfigUI = Window:DrawConfig({
-    Name = 'Config',
-    Icon = Compkiller:_GetIcon('folder'),
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11655,11550,10710,11025,10815}),
+    Icon = Compkiller:_GetIcon(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10710,11655,11340,10500,10605,11970})),
     Config = ConfigManager,
 })
 
 ConfigUI:Init()
 
 -- Services and Variables
-local StarterGui = game:GetService('StarterGui')
-local RunService = game:GetService('RunService')
-local UserInputService = game:GetService('UserInputService')
-local ReplicatedStorage = game:GetService('ReplicatedStorage')
+local StarterGui = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025}))
+local RunService = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605}))
+local UserInputService = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+local ReplicatedStorage = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
 local CurrentCamera = workspace.CurrentCamera
-local Inset = game:GetService('GuiService'):GetGuiInset().Y
+local Inset = game:GetService(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,12285,11025,8715,10605,11970,12390,11025,10395,10605})):GetGuiInset().Y
 local Client = Players.LocalPlayer
 local Mouse = Client:GetMouse()
 
 local DEBUG_MODE = false
 local SEND_NOTIFICATIONS = false
 local Target = nil
-local TargetPart = 'Head'
+local ForceHitTarget = nil
+local TargetPart = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500})
 local BulletTPEnabled = false
 local BulletSpeed = 300
 local LeadStrength = 0.1
@@ -210,16 +229,24 @@ local PatchedGuns = {}
 local GunMaids = {}
 local BeamVisualsEnabled = false
 local BeamColor = Color3.fromRGB(128, 0, 255)
-local currentText = ''
+local HitChamColor = Color3.fromRGB(175, 25, 255)
+local currentText = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
 local textIndex = 1
 local lastTextUpdate = 0
 local textUpdateDelay = 0.1
 local tpWalkEnabled = false
 local tpwalking = false
 local tpWalkSpeed = 10
+local ForceHitEnabled = false
+local HitChamsEnabled = false
+local ChamFadeTime = 1.3
+local hitSoundId = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5670,5670,5040,5775,5145,5145,5355,5250,5565,5565})
+local tracerLine = nil
+local lastShotTime = 0
+local HIT_DETECTION_WINDOW = 0.5
 
 local Settings = {
-    Aimpart = 'Head',
+    Aimpart = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}),
     Prediction = LeadStrength,
     Thickness = 3.5,
     Transparency = 1,
@@ -229,10 +256,10 @@ local Settings = {
 }
 
 local GUN_NAMES = {
-    ['[Revolver]'] = true,
-    ['[Double-Barrel SG]'] = true,
-    ['[TacticalShotgun]'] = true,
-    ['[SMG]'] = true,
+    [UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,8610,10605,12390,11655,11340,12390,10605,11970,9765})] = true,
+    [UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,7140,11655,12285,10290,11340,10605,4725,6930,10185,11970,11970,10605,11340,3360,8715,7455,9765})] = true,
+    [UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,8820,10185,10395,12180,11025,10395,10185,11340,8715,10920,11655,12180,10815,12285,11550,9765})] = true,
+    [UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,8715,8085,7455,9765})] = true,
 }
 
 local RapidFire = {
@@ -243,16 +270,34 @@ local RapidFire = {
     InfiniteRange = 999999,
 }
 
-local Line = Drawing.new('Line')
-local Circle = Drawing.new('Circle')
+local Line = Drawing.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,11025,11550,10605}))
+local Circle = Drawing.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11025,11970,10395,11340,10605}))
 Circle.Filled = false
-local Text = Drawing.new('Text')
+local Text = Drawing.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10605,12600,12180}))
+
+local BodyParts = {
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8925,11760,11760,10605,11970,8820,11655,11970,12075,11655}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,11655,12495,10605,11970,8820,11655,11970,12075,11655}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,8925,11760,11760,10605,11970,6825,11970,11445}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,7980,11655,12495,10605,11970,6825,11970,11445}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,7560,10185,11550,10500}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,8925,11760,11760,10605,11970,6825,11970,11445}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,7980,11655,12495,10605,11970,6825,11970,11445}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,7560,10185,11550,10500}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,8925,11760,11760,10605,11970,7980,10605,10815}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,7980,11655,12495,10605,11970,7980,10605,10815}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,10605,10710,12180,7350,11655,11655,12180}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,8925,11760,11760,10605,11970,7980,10605,10815}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,7980,11655,12495,10605,11970,7980,10605,10815}),
+    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,11025,10815,10920,12180,7350,11655,11655,12180}),
+}
 
 -- Notification Function
 local function notify(title, text, dur)
     if SEND_NOTIFICATIONS then
         pcall(function()
-            StarterGui:SetCore('SendNotification', {
+            StarterGui:SetCore(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
                 Title = title,
                 Text = text,
                 Duration = dur or 3,
@@ -264,7 +309,174 @@ end
 -- Debug Function
 local function dbgWarn(msg)
     if DEBUG_MODE then
-        warn('[DEBUG] ' .. tostring(msg))
+        warn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9555,7140,7245,6930,8925,7455,9765,3360}) .. tostring(msg))
+    end
+end
+
+-- Tracer Helper for Force Hit
+local function createTracer()
+    if tracerLine then
+        tracerLine:Remove()
+    end
+    tracerLine = Drawing.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7980,11025,11550,10605}))
+    tracerLine.Color = Color3.new(1, 0, 0)
+    tracerLine.Thickness = 2
+    tracerLine.Visible = false
+end
+
+local function updateTracer()
+    if not (ForceHitEnabled and ForceHitTarget and tracerLine) then
+        if tracerLine then
+            tracerLine.Visible = false
+        end
+        return
+    end
+
+    local localChar = LocalPlayer.Character
+    local targetChar = ForceHitTarget.Character
+    if not localChar or not targetChar then
+        tracerLine.Visible = false
+        return
+    end
+
+    local cam = workspace.CurrentCamera
+    local localHead = localChar:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
+    local targetHead = targetChar:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
+
+    if localHead and targetHead then
+        local fromPos, onScreen1 = cam:WorldToViewportPoint(localHead.Position)
+        local toPos, onScreen2 = cam:WorldToViewportPoint(targetHead.Position)
+        if onScreen1 and onScreen2 then
+            tracerLine.From = Vector2.new(fromPos.X, fromPos.Y)
+            tracerLine.To = Vector2.new(toPos.X, toPos.Y)
+            tracerLine.Visible = true
+        else
+            tracerLine.Visible = false
+        end
+    else
+        tracerLine.Visible = false
+    end
+end
+
+local function removeTracer()
+    if tracerLine then
+        tracerLine:Remove()
+        tracerLine = nil
+    end
+end
+
+-- Hit Sound
+local function playHitSound()
+    local head = LocalPlayer.Character
+        and LocalPlayer.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
+    if head then
+        local sound = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11655,12285,11550,10500}))
+        sound.SoundId = hitSoundId
+        sound.Volume = 1
+        sound.Parent = head
+        sound:Play()
+        game.Debris:AddItem(sound, 2)
+    end
+end
+
+-- Hit Chams Creation
+local function createHitCham(targetChar)
+    if
+        not targetChar
+        or not HitChamsEnabled
+        or not targetChar:IsDescendantOf(workspace)
+    then
+        return
+    end
+
+    local chamModel = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,11655,10500,10605,11340}))
+    chamModel.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,7035,10920,10185,11445})
+    chamModel.Parent = workspace
+
+    for _, partName in ipairs(BodyParts) do
+        local part = targetChar:FindFirstChild(partName)
+        if part and part:IsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10185,12075,10605,8400,10185,11970,12180})) then
+            local chamPart = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,10185,11970,12180}))
+            chamPart.Size = part.Size
+            chamPart.CFrame = part.CFrame
+            chamPart.Anchored = true
+            chamPart.CanCollide = false
+            chamPart.Material = Enum.Material.ForceField
+            chamPart.Color = HitChamColor
+            chamPart.Transparency = 0.5
+            chamPart.Parent = chamModel
+        end
+    end
+
+    if #chamModel:GetChildren() == 0 then
+        chamModel:Destroy()
+        return
+    end
+
+    local startTime = tick()
+    local conn
+    conn = RunService.RenderStepped:Connect(function()
+        local elapsed = tick() - startTime
+        if elapsed >= ChamFadeTime then
+            chamModel:Destroy()
+            conn:Disconnect()
+        else
+            local t = elapsed / ChamFadeTime
+            for _, p in ipairs(chamModel:GetChildren()) do
+                if p:IsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10185,12075,10605,8400,10185,11970,12180})) then
+                    p.Transparency = 0.5 + 0.5 * t
+                end
+            end
+        end
+    end)
+    dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11970,10605,10185,12180,10605,10500,3360,7560,11025,12180,7035,10920,10185,11445,3360,10710,11655,11970,3360}) .. (targetChar.Name or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12285,11550,11235,11550,11655,12495,11550})))
+end
+
+-- Fire Gun for Force Hit
+local function fireGun()
+    if not ForceHitEnabled or not ForceHitTarget then
+        return
+    end
+    local char = LocalPlayer.Character
+    local targetChar = ForceHitTarget.Character
+    if not (char and targetChar) then
+        return
+    end
+    local tool = char:FindFirstChildWhichIsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,11655,11340}))
+    if not tool or not tool:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10185,11550,10500,11340,10605})) then
+        return
+    end
+
+    local handle = tool.Handle
+    local muzzle = handle:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,12285,12810,12810,11340,10605}))
+        or { WorldPosition = (handle.CFrame * CFrame.new(-1, 0.4, 0)).Position }
+    local targetHead = targetChar:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
+    if not targetHead or not muzzle.WorldPosition then
+        return
+    end
+
+    local mainRemotes = ReplicatedStorage:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10185,11025,11550,8610,10605,11445,11655,12180,10605,12075}))
+    local mainRemoteEvent = mainRemotes
+        and mainRemotes:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10185,11025,11550,8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180}))
+    if mainRemoteEvent then
+        local offset = Vector3.new(
+            math.random(-5, 5) / 100,
+            math.random(-5, 5) / 100,
+            math.random(-5, 5) / 100
+        )
+        mainRemoteEvent:FireServer(
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180,7455,12285,11550}),
+            handle,
+            muzzle.WorldPosition,
+            targetHead.Position + offset,
+            targetHead,
+            Vector3.new(0, 0, 0)
+        )
+        lastShotTime = tick()
+        playHitSound()
+        if HitChamsEnabled then
+            createHitCham(targetChar)
+        end
     end
 end
 
@@ -277,14 +489,14 @@ pcall(function()
 end)
 
 for _, obj in ipairs(getgc(true)) do
-    if typeof(obj) == 'table' then
-        local detect = rawget(obj, 'Detected')
-        local kill = rawget(obj, 'Kill')
-        if typeof(detect) == 'function' and not DetectedFunc then
+    if typeof(obj) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12180,10185,10290,11340,10605}) then
+        local detect = rawget(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10605,12180,10605,10395,12180,10605,10500}))
+        local kill = rawget(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7875,11025,11340,11340}))
+        if typeof(detect) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10710,12285,11550,10395,12180,11025,11655,11550}) and not DetectedFunc then
             DetectedFunc = detect
             local old
             old = hookfunction(detect, function(action, info, noCrash)
-                if action ~= '_' then
+                if action ~= UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9975}) then
                     dbgWarn(
                         `Adonis flag blocked | Method: {action} | Info: {info}`
                     )
@@ -294,9 +506,9 @@ for _, obj in ipairs(getgc(true)) do
             table.insert(HookedFunctions, DetectedFunc)
         end
         if
-            rawget(obj, 'Variables')
-            and rawget(obj, 'Process')
-            and typeof(kill) == 'function'
+            rawget(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,10185,11970,11025,10185,10290,11340,10605,12075}))
+            and rawget(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,11655,10395,10605,12075,12075}))
+            and typeof(kill) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({10710,12285,11550,10395,12180,11025,11655,11550})
             and not KillFunc
         then
             KillFunc = kill
@@ -306,17 +518,17 @@ for _, obj in ipairs(getgc(true)) do
             end)
             table.insert(HookedFunctions, KillFunc)
         end
-        local indexInstance = rawget(obj, 'indexInstance')
-        if typeof(indexInstance) == 'table' and indexInstance[1] == 'kick' then
+        local indexInstance = rawget(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11025,11550,10500,10605,12600,7665,11550,12075,12180,10185,11550,10395,10605}))
+        if typeof(indexInstance) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12180,10185,10290,11340,10605}) and indexInstance[1] == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11235,11025,10395,11235}) then
             setreadonly(obj, false)
             setreadonly(indexInstance, false)
-            rawset(obj, 'Table', {
-                'kick',
+            rawset(obj, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,10290,11340,10605}), {
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11235,11025,10395,11235}),
                 function()
                     coroutine.yield()
                 end,
             })
-            dbgWarn('Mutated indexInstance to block kick communication')
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,12285,12180,10185,12180,10605,10500,3360,11025,11550,10500,10605,12600,7665,11550,12075,12180,10185,11550,10395,10605,3360,12180,11655,3360,10290,11340,11655,10395,11235,3360,11235,11025,10395,11235,3360,10395,11655,11445,11445,12285,11550,11025,10395,10185,12180,11025,11655,11550}))
         end
     end
 end
@@ -328,7 +540,7 @@ do
         newcclosure(function(...)
             local a, b = ...
             if DetectedFunc and a == DetectedFunc then
-                dbgWarn('Blocked Adonis debug.info sanity check')
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11340,11655,10395,11235,10605,10500,3360,6825,10500,11655,11550,11025,12075,3360,10500,10605,10290,12285,10815,4830,11025,11550,10710,11655,3360,12075,10185,11550,11025,12180,12705,3360,10395,10920,10605,10395,11235}))
                 return coroutine.yield(coroutine.running())
             end
             return old(...)
@@ -338,46 +550,205 @@ end
 
 do
     local old
-    old = hookmetamethod(game, '__namecall', function(self, ...)
+    old = hookmetamethod(game, UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9975,9975,11550,10185,11445,10605,10395,10185,11340,11340}), function(self, ...)
         local method = getnamecallmethod()
-        if typeof(method) == 'string' and method:lower() == 'kick' then
-            notify('Anti-Kick', 'Kick attempt blocked', 3)
+        local args = { ... }
+        if
+            method == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11025,11970,10605,8715,10605,11970,12390,10605,11970})
+            and self.Name == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180})
+            and args[1] == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180})
+            and BulletTPEnabled
+            and not RapidFireEnabled
+            and not TargetAll
+            and Target
+            and Target.Character
+        then
+            lastShotTime = tick()
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,12180,3360,10710,11025,11970,10605,10500,3360,11025,11550,3360,8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,11655,11550,3360}) .. Target.Name)
+        end
+        if
+            method == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11025,11970,10605,8715,10605,11970,12390,10605,11970})
+            and self.Name == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180})
+            and args[1] == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180})
+            and (RapidFireEnabled or TargetAll)
+        then
+            dbgWarn(
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11340,11655,10395,11235,10605,10500,3360,10500,10605,10710,10185,12285,11340,12180,3360,8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180,6090,7350,11025,11970,10605,8715,10605,11970,12390,10605,11970,3360,10710,11655,11970,3360,8715,10920,11655,11655,12180,3360,12180,11655,3360,11760,11970,10605,12390,10605,11550,12180,3360,10500,12285,11760,11340,11025,10395,10185,12180,10605,3360,10710,11025,11970,11025,11550,10815})
+            )
+            return
+        end
+        if typeof(method) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({12075,12180,11970,11025,11550,10815}) and method:lower() == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11235,11025,10395,11235}) then
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11550,12180,11025,4725,7875,11025,10395,11235}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7875,11025,10395,11235,3360,10185,12180,12180,10605,11445,11760,12180,3360,10290,11340,11655,10395,11235,10605,10500}), 3)
             return nil
         end
         return old(self, ...)
     end)
 end
 
+-- Hit Detection for Target Aim and Force Hit
+local function setupHitDetection()
+    local function connectHealthMonitor(player)
+        if
+            (player == Target or player == ForceHitTarget) and player.Character
+        then
+            local humanoid = player.Character:FindFirstChildOfClass(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
+            if humanoid then
+                local lastHealth = humanoid.Health
+                local connection
+                connection = humanoid.HealthChanged:Connect(function(newHealth)
+                    if
+                        HitChamsEnabled
+                        and (BulletTPEnabled or ForceHitEnabled)
+                        and not RapidFireEnabled
+                        and not TargetAll
+                        and (player == Target or player == ForceHitTarget)
+                        and newHealth < lastHealth
+                        and (tick() - lastShotTime) <= HIT_DETECTION_WINDOW
+                    then
+                        createHitCham(player.Character)
+                        notify(
+                            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,12075}),
+                            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,11655,11550,3360}) .. player.Name,
+                            3
+                        )
+                        dbgWarn(
+                            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,11655,11550,3360})
+                                .. player.Name
+                                .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,12180,11970,11025,10815,10815,10605,11970,11025,11550,10815,3360,10395,10920,10185,11445,12075})
+                        )
+                    end
+                    lastHealth = newHealth
+                end)
+                local cleanup
+                cleanup = Players.PlayerRemoving:Connect(function(p)
+                    if p == player then
+                        connection:Disconnect()
+                        cleanup:Disconnect()
+                    end
+                end)
+                local targetChange
+                targetChange = RunService.Heartbeat:Connect(function()
+                    if Target ~= player and ForceHitTarget ~= player then
+                        connection:Disconnect()
+                        cleanup:Disconnect()
+                        targetChange:Disconnect()
+                    end
+                end)
+            end
+        end
+    end
+
+    local lastTarget = nil
+    local lastForceHitTarget = nil
+    RunService.Heartbeat:Connect(function()
+        if Target ~= lastTarget or ForceHitTarget ~= lastForceHitTarget then
+            if Target then
+                connectHealthMonitor(Target)
+            end
+            if ForceHitTarget then
+                connectHealthMonitor(ForceHitTarget)
+            end
+            lastTarget = Target
+            lastForceHitTarget = ForceHitTarget
+        end
+    end)
+end
+
+task.spawn(setupHitDetection)
+
 pcall(function()
     setthreadidentity(7)
 end)
-notify('Adonis Bypass', 'Script loaded successfully', 4)
+notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,10500,11655,11550,11025,12075,3360,6930,12705,11760,10185,12075,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,3360,11340,11655,10185,10500,10605,10500,3360,12075,12285,10395,10395,10605,12075,12075,10710,12285,11340,11340,12705}), 4)
 dbgWarn(`Hooked {#HookedFunctions} Adonis functions`)
 
 -- Beam Visuals Section
 BeamVisualsSection:AddToggle({
-    Name = 'Beam Tracers',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,8820,11970,10185,10395,10605,11970,12075}),
     Default = false,
     Callback = function(state)
         BeamVisualsEnabled = state
-        notify('Beam Visuals', state and 'Enabled' or 'Disabled', 3)
-        dbgWarn('Beam Visuals toggled: ' .. tostring(state))
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}), state and UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}) or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
 BeamVisualsSection:AddColorPicker({
-    Name = 'Beam Color',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,7035,11655,11340,11655,11970}),
     Default = Color3.fromRGB(128, 0, 255),
     Callback = function(value)
         BeamColor = value
-        notify('Beam Visuals', 'Color updated to: ' .. tostring(value), 3)
-        dbgWarn('Beam color updated to: ' .. tostring(value))
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,10395,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value))
     end,
 })
 
--- Target Aim Toggle
+-- Rage Section (Force Hit and Hit Chams)
+RageSection:AddToggle({
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}),
+    Default = false,
+    Callback = function(state)
+        ForceHitEnabled = state
+        ForceHitTarget = nil
+        if not state then
+            removeTracer()
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        else
+            createTracer()
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500,3360,4200,8400,11970,10605,12075,12075,3360,8820,3360,12180,11655,3360,11340,11655,10395,11235,4305}), 3)
+        end
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+RageSection:AddToggle({
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,12075}),
+    Default = false,
+    Callback = function(state)
+        HitChamsEnabled = state
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,12075}), state and UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}) or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,12075,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+RageSection:AddColorPicker({
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,3360,7035,11655,11340,11655,11970}),
+    Default = Color3.fromRGB(175, 25, 255),
+    Callback = function(value)
+        HitChamColor = value
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180,3360,7035,10920,10185,11445,3360,10395,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+RageSection:AddButton({
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,12180,3360,7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,7875,10605,12705,3360,4200,8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,10185,10710,12180,10605,11970,3360,10395,11340,11025,10395,11235,11025,11550,10815,4305}),
+    Callback = function()
+        local listening = true
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,7875,10605,12705}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,12180,11655,3360,12075,10605,12180,4830,4830,4830}), 5)
+        local connection
+        connection = UserInputService.InputBegan:Connect(
+            function(input, processed)
+                if
+                    processed
+                    or input.UserInputType ~= Enum.UserInputType.Keyboard
+                    or not listening
+                then
+                    return
+                end
+                listening = false
+                Keybinds.ForceHit = input.KeyCode
+                ForceHitKeyLabel.Text = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,7875,10605,12705,6090,3360}) .. input.KeyCode.Name
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,11235,10605,12705,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. input.KeyCode.Name)
+                connection:Disconnect()
+            end
+        )
+    end,
+})
+
+-- Target Aim Section
 TargetAimSection:AddToggle({
-    Name = 'Target Aim',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
     Default = false,
     Callback = function(state)
         BulletTPEnabled = state
@@ -389,23 +760,22 @@ TargetAimSection:AddToggle({
             Text.Visible = false
             ViewEnabled = false
             CurrentCamera.CameraSubject = Client.Character
-                and Client.Character:FindFirstChildWhichIsA('Humanoid')
-            notify('Target Aim', 'Disabled', 3)
+                and Client.Character:FindFirstChildWhichIsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
         else
-            notify('Target Aim', 'Enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}), 3)
             if Target then
-                notify('Target Aim', 'Target locked: ' .. Target.DisplayName, 3)
+                notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName, 3)
             end
         end
-        dbgWarn('Target Aim toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- Target Part Dropdown
 TargetAimSection:AddDropdown({
-    Name = 'Target Part',
-    Default = 'Head',
-    Values = { 'Head', 'HumanoidRootPart' },
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,8400,10185,11970,12180}),
+    Default = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}),
+    Values = { UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}) },
     Callback = function(value)
         TargetPart = value
         Settings.Aimpart = value
@@ -415,13 +785,12 @@ TargetAimSection:AddDropdown({
                 CurrentCamera.CameraSubject = targetPart
             end
         end
-        dbgWarn('Selected target part: ' .. tostring(value))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,11340,10605,10395,12180,10605,10500,3360,12180,10185,11970,10815,10605,12180,3360,11760,10185,11970,12180,6090,3360}) .. tostring(value))
     end,
 })
 
--- Prediction Lead Strength Slider
 TargetAimSection:AddSlider({
-    Name = 'Prediction Lead Strength',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550,3360,7980,10605,10185,10500,3360,8715,12180,11970,10605,11550,10815,12180,10920}),
     Min = 10,
     Max = 19,
     Default = 10,
@@ -429,20 +798,19 @@ TargetAimSection:AddSlider({
         LeadStrength = value / 100
         Settings.Prediction = LeadStrength
         notify(
-            'Target Aim',
-            'Prediction lead strength set to: ' .. tostring(LeadStrength),
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550,3360,11340,10605,10185,10500,3360,12075,12180,11970,10605,11550,10815,12180,10920,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(LeadStrength),
             3
         )
-        dbgWarn('Prediction lead strength set to: ' .. tostring(LeadStrength))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550,3360,11340,10605,10185,10500,3360,12075,12180,11970,10605,11550,10815,12180,10920,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(LeadStrength))
     end,
 })
 
--- Target Lock Keybind
 TargetAimSection:AddButton({
-    Name = 'Set Target Lock Key (Press a key after clicking)',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,12180,3360,8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,3360,4200,8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,10185,10710,12180,10605,11970,3360,10395,11340,11025,10395,11235,11025,11550,10815,4305}),
     Callback = function()
         local listening = true
-        notify('Target Lock Key', 'Press a key to set...', 5)
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,12180,11655,3360,12075,10605,12180,4830,4830,4830}), 5)
         local connection
         connection = UserInputService.InputBegan:Connect(
             function(input, processed)
@@ -455,23 +823,22 @@ TargetAimSection:AddButton({
                 end
                 listening = false
                 Keybinds.TargetLock = input.KeyCode
-                TargetLockKeyLabel.Text = 'Target Lock Key: '
+                TargetLockKeyLabel.Text = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,6090,3360})
                     .. input.KeyCode.Name
-                dbgWarn('Target lock key set to: ' .. input.KeyCode.Name)
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,3360,11235,10605,12705,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. input.KeyCode.Name)
                 connection:Disconnect()
             end
         )
     end,
 })
 
--- View Toggle
 TargetAimSection:AddToggle({
-    Name = 'View Target',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}),
     Default = false,
     Callback = function(state)
         ViewEnabled = state
         if state then
-            notify('View Target', 'Enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}), 3)
             if Target and Target.Character then
                 local targetPart = Target.Character:FindFirstChild(TargetPart)
                 if targetPart then
@@ -479,117 +846,111 @@ TargetAimSection:AddToggle({
                 end
             end
         else
-            notify('View Target', 'Disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
             CurrentCamera.CameraSubject = Client.Character
-                and Client.Character:FindFirstChildWhichIsA('Humanoid')
+                and Client.Character:FindFirstChildWhichIsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
         end
-        dbgWarn('View Target toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- Rapid Fire Toggle
 TargetAimSection:AddToggle({
-    Name = 'Rapid Fire',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}),
     Default = false,
     Callback = function(state)
         RapidFireEnabled = state
         if state then
-            notify('Rapid Fire', 'Enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}), 3)
         else
-            notify('Rapid Fire', 'Disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
             for tool, maid in pairs(GunMaids) do
                 maid:Destroy()
                 GunMaids[tool] = nil
-                dbgWarn('Cleaned up Maid for ' .. tool.Name)
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7035,11340,10605,10185,11550,10605,10500,3360,12285,11760,3360,8085,10185,11025,10500,3360,10710,11655,11970,3360}) .. tool.Name)
             end
             mouseHeld = false
         end
-        dbgWarn('Rapid Fire toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- Target All Toggle
 TargetAimSection:AddToggle({
-    Name = 'Target All',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11340,11340}),
     Default = false,
     Callback = function(state)
         TargetAll = state
         if state then
             Target = nil
-            notify('Target All', 'Enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11340,11340}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}), 3)
         else
-            notify('Target All', 'Disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11340,11340}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
         end
-        dbgWarn('Target All toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11340,11340,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- Tracer Enabled Toggle
+-- Target Visuals Section
 TargetVisualsSection:AddToggle({
-    Name = 'Tracer Enabled',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,7245,11550,10185,10290,11340,10605,10500}),
     Default = true,
     Callback = function(state)
         TracerEnabled = state
         if not state then
             Line.Visible = false
-            notify('Target Visuals', 'Tracer disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,10500,11025,12075,10185,10290,11340,10605,10500}), 3)
         else
-            notify('Target Visuals', 'Tracer enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,10605,11550,10185,10290,11340,10605,10500}), 3)
         end
-        dbgWarn('Tracer enabled toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,10605,11550,10185,10290,11340,10605,10500,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- Tracer RGB Effect Toggle
 TargetVisualsSection:AddToggle({
-    Name = 'Tracer RGB Effect',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,7245,10710,10710,10605,10395,12180}),
     Default = false,
     Callback = function(state)
         TracerRGBEffectEnabled = state
         notify(
-            'Target Visuals',
-            state and 'Tracer RGB effect enabled'
-                or 'Tracer RGB effect disabled',
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            state and UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10605,11550,10185,10290,11340,10605,10500})
+                or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10500,11025,12075,10185,10290,11340,10605,10500}),
             3
         )
-        dbgWarn('Tracer RGB effect toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- FOV Toggle
 TargetVisualsSection:AddToggle({
-    Name = 'FOV Circle',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605}),
     Default = false,
     Callback = function(state)
         FOVEnabled = state
         if state then
-            notify('Target Visuals', 'FOV circle enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,10605,11550,10185,10290,11340,10605,10500}), 3)
         else
             Text.Visible = false
-            notify('Target Visuals', 'FOV circle disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,10500,11025,12075,10185,10290,11340,10605,10500}), 3)
         end
-        dbgWarn('FOV circle toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- FOV RGB Effect Toggle
 TargetVisualsSection:AddToggle({
-    Name = 'FOV RGB Effect',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,8610,7455,6930,3360,7245,10710,10710,10605,10395,12180}),
     Default = false,
     Callback = function(state)
         FOVRGBEnabled = state
         notify(
-            'Target Visuals',
-            state and 'FOV RGB effect enabled' or 'FOV RGB effect disabled',
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            state and UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10605,11550,10185,10290,11340,10605,10500}) or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10500,11025,12075,10185,10290,11340,10605,10500}),
             3
         )
-        dbgWarn('FOV RGB effect toggled: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
     end,
 })
 
--- FOV Size Slider
 TargetVisualsSection:AddSlider({
-    Name = 'FOV Circle Size',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605,3360,8715,11025,12810,10605}),
     Min = 20,
     Max = 200,
     Default = 60,
@@ -597,36 +958,35 @@ TargetVisualsSection:AddSlider({
         Settings.FOVRadius = value
         Circle.Radius = value
         notify(
-            'Target Visuals',
-            'FOV circle size set to: ' .. tostring(value),
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12075,11025,12810,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value),
             3
         )
-        dbgWarn('FOV circle size set to: ' .. tostring(value))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12075,11025,12810,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
     end,
 })
 
--- TP Walk Toggle
+-- TP Walk Section
 MovementSection:AddToggle({
-    Name = 'TP Walk',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}),
     Default = false,
     Callback = function(state)
         tpWalkEnabled = state
         if not state then
             tpwalking = false
-            notify('TP Walk', 'Disabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
         else
-            notify('TP Walk', 'Enabled', 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500}), 3)
         end
-        dbgWarn('TP Walk toggle set to: ' .. tostring(state))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,12180,11655,10815,10815,11340,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(state))
     end,
 })
 
--- TP Walk Keybind
 MovementSection:AddButton({
-    Name = 'Set TP Walk Key (Press a key after clicking)',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,12180,3360,8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,3360,4200,8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,10185,10710,12180,10605,11970,3360,10395,11340,11025,10395,11235,11025,11550,10815,4305}),
     Callback = function()
         local listening = true
-        notify('TP Walk Key', 'Press a key to set...', 5)
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,12180,11655,3360,12075,10605,12180,4830,4830,4830}), 5)
         local connection
         connection = UserInputService.InputBegan:Connect(
             function(input, processed)
@@ -639,39 +999,38 @@ MovementSection:AddButton({
                 end
                 listening = false
                 Keybinds.TPWalk = input.KeyCode
-                TPWalkKeyLabel.Text = 'TP Walk Key: ' .. input.KeyCode.Name
-                dbgWarn('TP Walk key set to: ' .. input.KeyCode.Name)
+                TPWalkKeyLabel.Text = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,6090,3360}) .. input.KeyCode.Name
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,11235,10605,12705,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. input.KeyCode.Name)
                 connection:Disconnect()
             end
         )
     end,
 })
 
--- TP Walk Speed Slider
 MovementSection:AddSlider({
-    Name = 'TP Walk Speed',
+    Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,8715,11760,10605,10605,10500}),
     Min = 0,
     Max = 20,
     Default = 10,
     Callback = function(value)
         tpWalkSpeed = value
-        notify('TP Walk', 'Speed set to: ' .. tostring(value), 3)
-        dbgWarn('TP Walk Speed set to: ' .. tostring(value))
+        notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,11760,10605,10605,10500,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,8715,11760,10605,10605,10500,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
     end,
 })
 
 -- Get Closest Target
 local function GetClosestTarget()
     local Closest, MinDist = nil, math.huge
-    local MousePos = Mouse.Hit.Position
+    local MousePos = Vector2.new(Mouse.X, Mouse.Y)
     for _, Player in ipairs(Players:GetPlayers()) do
         if Player ~= Client and Player.Character then
-            local Root = Player.Character:FindFirstChild('HumanoidRootPart')
-            local Humanoid = Player.Character:FindFirstChild('Humanoid')
-            local ISNTKNOCKED = Player.Character:FindFirstChild('BodyEffects')
-                and Player.Character.BodyEffects['K.O'].Value ~= true
+            local Root = Player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
+            local Humanoid = Player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
+            local ISNTKNOCKED = Player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11655,10500,12705,7245,10710,10710,10605,10395,12180,12075}))
+                and Player.Character.BodyEffects[UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7875,4830,8295})].Value ~= true
             local ISNTGRABBED = Player.Character:FindFirstChild(
-                'GRABBING_COINSTRAINT'
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,8610,6825,6930,6930,7665,8190,7455,9975,7035,8295,7665,8190,8715,8820,8610,6825,7665,8190,8820})
             ) == nil
             if
                 Root
@@ -680,10 +1039,16 @@ local function GetClosestTarget()
                 and ISNTKNOCKED
                 and ISNTGRABBED
             then
-                local Dist = (Root.Position - MousePos).Magnitude
-                if Dist < MinDist then
-                    MinDist = Dist
-                    Closest = Player
+                local screenPos, onScreen =
+                    CurrentCamera:WorldToViewportPoint(Root.Position)
+                if onScreen then
+                    local Dist = (
+                        Vector2.new(screenPos.X, screenPos.Y) - MousePos
+                    ).Magnitude
+                    if Dist < MinDist then
+                        MinDist = Dist
+                        Closest = Player
+                    end
                 end
             end
         end
@@ -699,25 +1064,25 @@ UserInputService.InputBegan:Connect(function(input, processed)
     -- Target Lock Key
     if input.KeyCode == Keybinds.TargetLock then
         if Target then
-            notify('Target Aim', 'Target unlocked: ' .. Target.DisplayName, 3)
+            notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName, 3)
             Target = nil
             Line.Visible = false
             Circle.Visible = false
             Text.Visible = false
-            currentText = ''
+            currentText = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
             textIndex = 1
             if ViewEnabled then
                 CurrentCamera.CameraSubject = Client.Character
-                    and Client.Character:FindFirstChildWhichIsA('Humanoid')
+                    and Client.Character:FindFirstChildWhichIsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
             end
-            dbgWarn('Target unlocked via key: ' .. input.KeyCode.Name)
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,6090,3360}) .. input.KeyCode.Name)
         else
             if BulletTPEnabled then
                 Target = GetClosestTarget()
                 if Target then
                     notify(
-                        'Target Aim',
-                        'Target locked: ' .. Target.DisplayName,
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName,
                         3
                     )
                     if ViewEnabled and Target.Character then
@@ -728,18 +1093,50 @@ UserInputService.InputBegan:Connect(function(input, processed)
                         end
                     end
                     dbgWarn(
-                        'Target locked: '
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360})
                             .. Target.DisplayName
-                            .. ' via key: '
+                            .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,12390,11025,10185,3360,11235,10605,12705,6090,3360})
                             .. input.KeyCode.Name
                     )
                 else
-                    notify('Target Aim', 'No target found', 3)
-                    dbgWarn('No target found for lock')
+                    notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500}), 3)
+                    dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500,3360,10710,11655,11970,3360,11340,11655,10395,11235}))
                 end
             else
-                notify('Target Aim', 'Enable Target Aim to lock a target', 3)
-                dbgWarn('Target Aim not enabled for locking')
+                notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,3360,8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,12180,11655,3360,11340,11655,10395,11235,3360,10185,3360,12180,10185,11970,10815,10605,12180}), 3)
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,11550,11655,12180,3360,10605,11550,10185,10290,11340,10605,10500,3360,10710,11655,11970,3360,11340,11655,10395,11235,11025,11550,10815}))
+            end
+        end
+    end
+    -- Force Hit Key
+    if input.KeyCode == Keybinds.ForceHit and ForceHitEnabled then
+        if ForceHitTarget then
+            notify(
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}),
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,6090,3360}) .. ForceHitTarget.DisplayName,
+                3
+            )
+            ForceHitTarget = nil
+            removeTracer()
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,12180,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,6090,3360}) .. input.KeyCode.Name)
+        else
+            ForceHitTarget = GetClosestTarget()
+            if ForceHitTarget then
+                notify(
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}),
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360}) .. ForceHitTarget.DisplayName,
+                    3
+                )
+                createTracer()
+                dbgWarn(
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,12180,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360})
+                        .. ForceHitTarget.DisplayName
+                        .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,12390,11025,10185,3360,11235,10605,12705,6090,3360})
+                        .. input.KeyCode.Name
+                )
+            else
+                notify(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,3360,7560,11025,12180}), UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500}), 3)
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500,3360,10710,11655,11970,3360,7350,11655,11970,10395,10605,3360,7560,11025,12180,3360,11340,11655,10395,11235}))
             end
         end
     end
@@ -747,14 +1144,14 @@ UserInputService.InputBegan:Connect(function(input, processed)
     if input.KeyCode == Keybinds.TPWalk and tpWalkEnabled then
         tpwalking = not tpwalking
         notify(
-            'TP Walk',
-            tpwalking and 'Enabled via keybind' or 'Disabled via keybind',
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235}),
+            tpwalking and UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11550,10185,10290,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,10290,11025,11550,10500}) or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,11025,12075,10185,10290,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,10290,11025,11550,10500}),
             3
         )
         dbgWarn(
-            'TP Walk toggled via key: '
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,12180,11655,10815,10815,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,6090,3360})
                 .. input.KeyCode.Name
-                .. ', State: '
+                .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,8715,12180,10185,12180,10605,6090,3360})
                 .. tostring(tpwalking)
         )
     end
@@ -764,10 +1161,10 @@ end)
 UserInputService.InputBegan:Connect(function(input, gpe)
     if input.UserInputType == Enum.UserInputType.MouseButton1 then
         local equippedGun = Client.Character
-            and Client.Character:FindFirstChildOfClass('Tool')
+            and Client.Character:FindFirstChildOfClass(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,11655,11340}))
         if equippedGun and GUN_NAMES[equippedGun.Name] then
             mouseHeld = true
-            dbgWarn('Mouse held, gun equipped: ' .. equippedGun.Name)
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,11655,12285,12075,10605,3360,10920,10605,11340,10500,4620,3360,10815,12285,11550,3360,10605,11865,12285,11025,11760,11760,10605,10500,6090,3360}) .. equippedGun.Name)
         end
     end
 end)
@@ -775,19 +1172,19 @@ end)
 UserInputService.InputEnded:Connect(function(input, gpe)
     if input.UserInputType == Enum.UserInputType.MouseButton1 then
         mouseHeld = false
-        dbgWarn('Mouse released')
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,11655,12285,12075,10605,3360,11970,10605,11340,10605,10185,12075,10605,10500}))
     end
 end)
 
 -- Detect Gun Unequip
 Client.Character.ChildRemoved:Connect(function(child)
-    if child:IsA('Tool') and GUN_NAMES[child.Name] then
+    if child:IsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,11655,11340})) and GUN_NAMES[child.Name] then
         mouseHeld = false
         if GunMaids[child] then
             GunMaids[child]:Destroy()
             GunMaids[child] = nil
             PatchedGuns[child] = nil
-            dbgWarn('Gun unequipped: ' .. child.Name .. ', cleaned up Maid')
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,12285,11550,3360,12285,11550,10605,11865,12285,11025,11760,11760,10605,10500,6090,3360}) .. child.Name .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,10395,11340,10605,10185,11550,10605,10500,3360,12285,11760,3360,8085,10185,11025,10500}))
         end
     end
 end)
@@ -808,14 +1205,14 @@ local BeamConnections = {}
 table.insert(
     BeamConnections,
     workspace.DescendantAdded:Connect(function(descendant)
-        if not BeamVisualsEnabled or not descendant:IsA('Beam') then
+        if not BeamVisualsEnabled or not descendant:IsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445})) then
             return
         end
         local isLocalPlayerBeam = false
-        local debugReason = ''
+        local debugReason = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
         local character = Client.Character
         local equippedGun = character
-            and character:FindFirstChildOfClass('Tool')
+            and character:FindFirstChildOfClass(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,11655,11340}))
         if descendant.Attachment0 or descendant.Attachment1 then
             local beamPart = descendant.Attachment0
                     and descendant.Attachment0.Parent
@@ -830,14 +1227,14 @@ table.insert(
                 isLocalPlayerBeam = true
             else
                 debugReason = debugReason
-                    .. 'Attachment not linked to Character/Tool; '
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,12180,12180,10185,10395,10920,11445,10605,11550,12180,3360,11550,11655,12180,3360,11340,11025,11550,11235,10605,10500,3360,12180,11655,3360,7035,10920,10185,11970,10185,10395,12180,10605,11970,4935,8820,11655,11655,11340,6195,3360})
             end
         end
         if
             not isLocalPlayerBeam
             and descendant.Attachment0
             and character
-            and character:FindFirstChild('HumanoidRootPart')
+            and character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
         then
             local rootPos = character.HumanoidRootPart.Position
             local attachPos = descendant.Attachment0.WorldPosition
@@ -846,9 +1243,9 @@ table.insert(
                 isLocalPlayerBeam = true
             else
                 debugReason = debugReason
-                    .. 'Attachment0 too far: '
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,12180,12180,10185,10395,10920,11445,10605,11550,12180,5040,3360,12180,11655,11655,3360,10710,10185,11970,6090,3360})
                     .. distance
-                    .. ' studs; '
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,12075,12180,12285,10500,12075,6195,3360})
             end
         end
         if isLocalPlayerBeam then
@@ -861,7 +1258,7 @@ table.insert(
                     descendant.Color = ColorSequence.new(beamColor)
                     descendant.Width0 = 0.3
                     descendant.Width1 = 0.3
-                    descendant.Texture = 'rbxassetid://243737654'
+                    descendant.Texture = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5250,5460,5355,5775,5355,5775,5670,5565,5460})
                     descendant.Transparency = NumberSequence.new({
                         NumberSequenceKeypoint.new(0, 0.1),
                         NumberSequenceKeypoint.new(1, 0.3),
@@ -869,18 +1266,18 @@ table.insert(
                     descendant.TextureSpeed = 4
                     descendant.LightEmission = 1
                     dbgWarn(
-                        'Beam modified: Name='
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,10605,10185,11445,3360,11445,11655,10500,11025,10710,11025,10605,10500,6090,3360,8190,10185,11445,10605,6405})
                             .. descendant.Name
-                            .. ', Color='
+                            .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,7035,11655,11340,11655,11970,6405})
                             .. tostring(beamColor)
                     )
                 end
             end)
         else
             dbgWarn(
-                'Non-LocalPlayer Beam ignored: '
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8190,11655,11550,4725,7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970,3360,6930,10605,10185,11445,3360,11025,10815,11550,11655,11970,10605,10500,6090,3360})
                     .. descendant.Name
-                    .. ', Reason='
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,8610,10605,10185,12075,11655,11550,6405})
                     .. debugReason
             )
         end
@@ -947,14 +1344,14 @@ RunService.Heartbeat:Connect(function()
         Circle.Radius = Settings.FOVRadius
         Circle.Color = fovColor
         if BulletTPEnabled and Target and Target.Character then
-            local targetName = Target.DisplayName or ''
+            local targetName = Target.DisplayName or UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
             if tick() - lastTextUpdate >= textUpdateDelay then
                 if textIndex <= #targetName then
                     currentText = string.sub(targetName, 1, textIndex)
                     textIndex = textIndex + 1
                 else
                     textIndex = 1
-                    currentText = ''
+                    currentText = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
                 end
                 lastTextUpdate = tick()
             end
@@ -968,14 +1365,28 @@ RunService.Heartbeat:Connect(function()
             Text.Outline = true
         else
             Text.Visible = false
-            currentText = ''
+            currentText = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
             textIndex = 1
         end
     else
         Circle.Visible = false
         Text.Visible = false
-        currentText = ''
+        currentText = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({})
         textIndex = 1
+    end
+    if ForceHitEnabled then
+        updateTracer()
+    end
+end)
+
+-- Auto Shoot Loop for Force Hit
+local shootCooldown, lastShoot = 0.02, 0
+RunService.Heartbeat:Connect(function()
+    if ForceHitEnabled and ForceHitTarget then
+        if tick() - lastShoot >= shootCooldown then
+            fireGun()
+            lastShoot = tick()
+        end
     end
 end)
 
@@ -983,24 +1394,23 @@ end)
 RunService.Heartbeat:Connect(function(delta)
     if tpWalkEnabled and tpwalking then
         local chr = Client.Character
-        local hum = chr and chr:FindFirstChildWhichIsA('Humanoid')
-        local root = chr and chr:FindFirstChild('HumanoidRootPart')
+        local hum = chr and chr:FindFirstChildWhichIsA(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500}))
+        local root = chr and chr:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
         if chr and hum and root and hum.MoveDirection.Magnitude > 0 then
             local success, err = pcall(function()
                 root.CFrame = root.CFrame
                     + (hum.MoveDirection * tpWalkSpeed * delta * 10)
             end)
             if not success then
-                -- Fallback to Humanoid:MoveTo
                 local targetPos = root.Position
                     + (hum.MoveDirection * tpWalkSpeed * delta * 10)
                 hum:MoveTo(targetPos)
                 dbgWarn(
-                    'TP Walk CFrame failed, using MoveTo: ' .. tostring(err)
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,7035,7350,11970,10185,11445,10605,3360,10710,10185,11025,11340,10605,10500,4620,3360,12285,12075,11025,11550,10815,3360,8085,11655,12390,10605,8820,11655,6090,3360}) .. tostring(err)
                 )
             else
                 dbgWarn(
-                    'TP Walk applied: Moved by '
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,10185,11760,11760,11340,11025,10605,10500,6090,3360,8085,11655,12390,10605,10500,3360,10290,12705,3360})
                         .. tostring(
                             hum.MoveDirection * tpWalkSpeed * delta * 10
                         )
@@ -1008,11 +1418,11 @@ RunService.Heartbeat:Connect(function(delta)
             end
         else
             dbgWarn(
-                'TP Walk failed: Character='
+                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,8400,3360,9135,10185,11340,11235,3360,10710,10185,11025,11340,10605,10500,6090,3360,7035,10920,10185,11970,10185,10395,12180,10605,11970,6405})
                     .. tostring(chr)
-                    .. ', Humanoid='
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,7560,12285,11445,10185,11550,11655,11025,10500,6405})
                     .. tostring(hum)
-                    .. ', Root='
+                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,8610,11655,11655,12180,6405})
                     .. tostring(root)
             )
         end
@@ -1025,7 +1435,7 @@ local function PredictPosition(targetPart, bulletSpeed)
         return targetPart and targetPart.Position or Vector3.zero
     end
     local char = Client.Character
-    local hrp = char and char:FindFirstChild('HumanoidRootPart')
+    local hrp = char and char:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
     if not hrp then
         return targetPart.Position
     end
@@ -1064,7 +1474,7 @@ local function PredictPosition(targetPart, bulletSpeed)
     local ok, p = pcall(function()
         return Client:GetNetworkPing()
     end)
-    if ok and type(p) == 'number' then
+    if ok and type(p) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({11550,12285,11445,10290,10605,11970}) then
         ping = p
     end
     ping = math.clamp(ping, 0.05, 0.5)
@@ -1090,15 +1500,15 @@ local function InstallBulletHook()
                 and not TargetAll
                 and Target
                 and (
-                    key == 'Hit'
-                    or (key == 'Target' and game.PlaceId == 2788229376)
+                    key == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,11025,12180})
+                    or (key == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180}) and game.PlaceId == 2788229376)
                 )
             then
                 local part = Target.Character
                     and Target.Character:FindFirstChild(TargetPart)
                 if part then
                     local pos = PredictPosition(part, BulletSpeed)
-                    if typeof(pos) == 'Vector3' then
+                    if typeof(pos) == UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,10605,10395,12180,11655,11970,5355}) then
                         return CFrame.new(pos)
                     end
                 end
@@ -1127,7 +1537,7 @@ task.spawn(function()
                 return mt.__index
             end)
             if success_index and index and index ~= currentMouseIndex then
-                dbgWarn('Watchdog detected __index change, reinstalling hook')
+                dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9135,10185,12180,10395,10920,10500,11655,10815,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,9975,9975,11025,11550,10500,10605,12600,3360,10395,10920,10185,11550,10815,10605,4620,3360,11970,10605,11025,11550,12075,12180,10185,11340,11340,11025,11550,10815,3360,10920,11655,11655,11235}))
                 currentMouseIndex = InstallBulletHook()
             end
         end
@@ -1137,20 +1547,20 @@ end)
 -- Wallbang Module
 local function applyWallbang()
     local success, err = pcall(function()
-        local Handler = ReplicatedStorage:FindFirstChild('MainModule')
+        local Handler = ReplicatedStorage:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10185,11025,11550,8085,11655,10500,12285,11340,10605}))
         if not Handler then
-            error('MainModule not found in ReplicatedStorage')
+            error(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10185,11025,11550,8085,11655,10500,12285,11340,10605,3360,11550,11655,12180,3360,10710,11655,12285,11550,10500,3360,11025,11550,3360,8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
         end
         local Module = require(Handler)
         Module.Ignored = {
-            workspace:WaitForChild('Vehicles'),
-            workspace:WaitForChild('MAP'),
-            workspace:WaitForChild('Ignored'),
+            workspace:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9030,10605,10920,11025,10395,11340,10605,12075})),
+            workspace:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,6825,8400})),
+            workspace:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7665,10815,11550,11655,11970,10605,10500})),
         }
-        dbgWarn('Wallbang applied: Ignored Vehicles, MAP, Ignored')
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9135,10185,11340,11340,10290,10185,11550,10815,3360,10185,11760,11760,11340,11025,10605,10500,6090,3360,7665,10815,11550,11655,11970,10605,10500,3360,9030,10605,10920,11025,10395,11340,10605,12075,4620,3360,8085,6825,8400,4620,3360,7665,10815,11550,11655,11970,10605,10500}))
     end)
     if not success then
-        dbgWarn('Wallbang error: ' .. tostring(err))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({9135,10185,11340,11340,10290,10185,11550,10815,3360,10605,11970,11970,11655,11970,6090,3360}) .. tostring(err))
     end
 end
 
@@ -1158,22 +1568,22 @@ end
 local function hookGunHandlerShoot()
     local success, err = pcall(function()
         local gunHandler =
-            require(ReplicatedStorage.Modules:WaitForChild('GunHandler'))
+            require(ReplicatedStorage.Modules:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,12285,11550,7560,10185,11550,10500,11340,10605,11970})))
         local oldShoot = gunHandler.shoot
         gunHandler.shoot = function(args)
             if RapidFireEnabled or TargetAll then
                 args.Range = RapidFire.InfiniteRange
                 dbgWarn(
-                    'Forced Range='
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11655,11970,10395,10605,10500,3360,8610,10185,11550,10815,10605,6405})
                         .. RapidFire.InfiniteRange
-                        .. ' in gunHandler.shoot'
+                        .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,11025,11550,3360,10815,12285,11550,7560,10185,11550,10500,11340,10605,11970,4830,12075,10920,11655,11655,12180})
                 )
             end
             return oldShoot(args)
         end
     end)
     if not success then
-        dbgWarn('Error hooking GunHandler: ' .. tostring(err))
+        dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11970,11970,11655,11970,3360,10920,11655,11655,11235,11025,11550,10815,3360,7455,12285,11550,7560,10185,11550,10500,11340,10605,11970,6090,3360}) .. tostring(err))
     end
 end
 
@@ -1196,12 +1606,12 @@ local function patchGun(tool)
         return
     end
     PatchedGuns[tool] = true
-    local ammo = tool:WaitForChild('Ammo')
-    local handle = tool:WaitForChild('Handle')
+    local ammo = tool:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11445,11445,11655}))
+    local handle = tool:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10185,11550,10500,11340,10605}))
     local gunHandler =
-        require(ReplicatedStorage.Modules:WaitForChild('GunHandler'))
-    local remote = tool:WaitForChild('RemoteEvent')
-    local range = tool:WaitForChild('Range')
+        require(ReplicatedStorage.Modules:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,12285,11550,7560,10185,11550,10500,11340,10605,11970})))
+    local remote = tool:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180}))
+    local range = tool:WaitForChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11550,10815,10605}))
     local maid = require(ReplicatedStorage.Modules.Maid).new()
     GunMaids[tool] = maid
 
@@ -1213,19 +1623,19 @@ local function patchGun(tool)
                 ammo.Value = RapidFire.InfiniteAmmo
                 range.Value = RapidFire.InfiniteRange
                 dbgWarn(
-                    'Set '
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10605,12180,3360})
                         .. tool.Name
-                        .. ' Ammo='
+                        .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,6825,11445,11445,11655,6405})
                         .. ammo.Value
-                        .. ', Range='
+                        .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,8610,10185,11550,10815,10605,6405})
                         .. range.Value
                 )
             end)
             if not success then
                 dbgWarn(
-                    'Error setting ammo/range for '
+                    UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7245,11970,11970,11655,11970,3360,12075,10605,12180,12180,11025,11550,10815,3360,10185,11445,11445,11655,4935,11970,10185,11550,10815,10605,3360,10710,11655,11970,3360})
                         .. tool.Name
-                        .. ': '
+                        .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6090,3360})
                         .. tostring(err)
                 )
             end
@@ -1235,7 +1645,7 @@ local function patchGun(tool)
         GunMaids[tool] = nil
         PatchedGuns[tool] = nil
         dbgWarn(
-            'Gun ' .. tool.Name .. ' unequipped or removed, cleaned up Maid'
+            UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7455,12285,11550,3360}) .. tool.Name .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,12285,11550,10605,11865,12285,11025,11760,11760,10605,10500,3360,11655,11970,3360,11970,10605,11445,11655,12390,10605,10500,4620,3360,10395,11340,10605,10185,11550,10605,10500,3360,12285,11760,3360,8085,10185,11025,10500})
         )
     end)
 
@@ -1251,9 +1661,9 @@ local function patchGun(tool)
         local success, err = pcall(function()
             range.Value = RapidFire.InfiniteRange
             applyWallbang()
-            local muzzle = tool:FindFirstChild('Default')
-                and tool.Default:FindFirstChild('Mesh')
-                and tool.Default.Mesh:FindFirstChild('Muzzle')
+            local muzzle = tool:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7140,10605,10710,10185,12285,11340,12180}))
+                and tool.Default:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,10605,12075,10920}))
+                and tool.Default.Mesh:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8085,12285,12810,12810,11340,10605}))
             local position = muzzle and muzzle.WorldPosition
                 or handle.CFrame.Position
             if TargetAll then
@@ -1286,19 +1696,22 @@ local function patchGun(tool)
                                 setidentity(8)
                             end)
                             addShot()
+                            if HitChamsEnabled then
+                                createHitCham(p.Character)
+                            end
                             ReplicatedStorage.MainRemotes.MainRemoteEvent:FireServer(
-                                'ShootGun',
+                                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180,7455,12285,11550}),
                                 handle,
                                 position,
                                 vShoot,
                                 v2,
                                 v3
                             )
-                            remote:FireServer('Shoot')
+                            remote:FireServer(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180}))
                             dbgWarn(
-                                'Target All shot at '
+                                UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10185,11970,10815,10605,12180,3360,6825,11340,11340,3360,12075,10920,11655,12180,3360,10185,12180,3360})
                                     .. p.Name
-                                    .. ', AimPosition='
+                                    .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,6825,11025,11445,8400,11655,12075,11025,12180,11025,11655,11550,6405})
                                     .. tostring(finalPos)
                             )
                         end
@@ -1332,19 +1745,22 @@ local function patchGun(tool)
                         setidentity(8)
                     end)
                     addShot()
+                    if HitChamsEnabled then
+                        createHitCham(Target.Character)
+                    end
                     ReplicatedStorage.MainRemotes.MainRemoteEvent:FireServer(
-                        'ShootGun',
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180,7455,12285,11550}),
                         handle,
                         position,
                         vShoot,
                         v2,
                         v3
                     )
-                    remote:FireServer('Shoot')
+                    remote:FireServer(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180}))
                     dbgWarn(
-                        'Rapid Fire shot at '
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605,3360,12075,10920,11655,12180,3360,10185,12180,3360})
                             .. Target.Name
-                            .. ', AimPosition='
+                            .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({4620,3360,6825,11025,11445,8400,11655,12075,11025,12180,11025,11655,11550,6405})
                             .. tostring(finalPos)
                     )
                 end
@@ -1360,7 +1776,7 @@ local function patchGun(tool)
                     local vShoot, v2, v3 = gunHandler.shoot({
                         Shooter = LocalPlayer.Character,
                         Handle = handle,
-                        ForcedOrigin = Nessuno,
+                        ForcedOrigin = position,
                         AimPosition = targetPos,
                         BeamColor = Color3.new(1, 0.545, 0.149),
                         Range = RapidFire.InfiniteRange,
@@ -1370,32 +1786,32 @@ local function patchGun(tool)
                     end)
                     addShot()
                     ReplicatedStorage.MainRemotes.MainRemoteEvent:FireServer(
-                        'ShootGun',
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180,7455,12285,11550}),
                         handle,
                         position,
                         vShoot,
                         v2,
                         v3
                     )
-                    remote:FireServer('Shoot')
+                    remote:FireServer(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10920,11655,11655,12180}))
                     dbgWarn(
-                        'Rapid Fire mouse shot, AimPosition='
+                        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605,3360,11445,11655,12285,12075,10605,3360,12075,10920,11655,12180,4620,3360,6825,11025,11445,8400,11655,12075,11025,12180,11025,11655,11550,6405})
                             .. tostring(targetPos)
                     )
                 end
             end
         end)
         if not success then
-            dbgWarn('Firing error for ' .. tool.Name .. ': ' .. tostring(err))
+            dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7350,11025,11970,11025,11550,10815,3360,10605,11970,11970,11655,11970,3360,10710,11655,11970,3360}) .. tool.Name .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6090,3360}) .. tostring(err))
         end
     end))
 
     notify(
-        'Rapid Fire',
-        'Patched ' .. tool.Name .. ' for Rapid Fire + Infinite Ammo',
+        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}),
+        UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,10185,12180,10395,10920,10605,10500,3360}) .. tool.Name .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,10710,11655,11970,3360,8610,10185,11760,11025,10500,3360,7350,11025,11970,10605,3360,4515,3360,7665,11550,10710,11025,11550,11025,12180,10605,3360,6825,11445,11445,11655}),
         3
     )
-    dbgWarn('Patched ' .. tool.Name .. ' for Rapid Fire')
+    dbgWarn(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8400,10185,12180,10395,10920,10605,10500,3360}) .. tool.Name .. UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({3360,10710,11655,11970,3360,8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}))
     return maid
 end
 
@@ -1409,162 +1825,74 @@ end)
 
 -- Patch Existing Gun
 local equippedGun = Client.Character
-    and Client.Character:FindFirstChildOfClass('Tool')
+    and Client.Character:FindFirstChildOfClass(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,11655,11655,11340}))
 if equippedGun and GUN_NAMES[equippedGun.Name] then
     patchGun(equippedGun)
 end
 
--- Prevent Duplicate Firing
-local oldFireServer
-oldFireServer = hookmetamethod(game, '__namecall', function(self, ...)
-    local method = getnamecallmethod()
-    local args = { ... }
-    if
-        method == 'FireServer'
-        and self.Name == 'RemoteEvent'
-        and args[1] == 'Shoot'
-        and (RapidFireEnabled or TargetAll)
-    then
-        dbgWarn(
-            'Blocked default RemoteEvent:FireServer for Shoot to prevent duplicate firing'
-        )
-        return
-    end
-    return oldFireServer(self, ...)
-end)
+-- Shared Script Label
+local MAIN_USERID = 7707208413
 
--- Cleanup and Re-patch on Respawn
-Client.CharacterAdded:Connect(function(newCharacter)
-    character = newCharacter
-    tpwalking = false
-    mouseHeld = false
-    if
-        ViewEnabled
-        and Target
-        and Target.Character
-        and Target.Character:FindFirstChild(TargetPart)
-    then
-        local targetPart = Target.Character:FindFirstChild(TargetPart)
-        if targetPart then
-            CurrentCamera.CameraSubject = targetPart
-            notify(
-                'View Target',
-                'Re-locked camera on ' .. Target.DisplayName .. ' after respawn',
-                3
-            )
-        else
-            ViewEnabled = false
-            CurrentCamera.CameraSubject = newCharacter
-                and newCharacter:FindFirstChildWhichIsA('Humanoid')
-            notify('View Target', 'Target part not found, view disabled', 3)
-        end
-    else
-        CurrentCamera.CameraSubject = newCharacter
-            and newCharacter:FindFirstChildWhichIsA('Humanoid')
-    end
-    Text.Visible = false
-    Circle.Visible = false
-    currentText = ''
-    textIndex = 1
-    for tool, maid in pairs(GunMaids) do
-        maid:Destroy()
-        GunMaids[tool] = nil
-        PatchedGuns[tool] = nil
-        dbgWarn('Cleaned up Maid for ' .. tool.Name .. ' on respawn')
-    end
-    local equippedGun = newCharacter
-        and newCharacter:FindFirstChildOfClass('Tool')
-    if equippedGun and GUN_NAMES[equippedGun.Name] then
-        patchGun(equippedGun)
-        dbgWarn('Re-patched equipped gun ' .. equippedGun.Name .. ' on respawn')
-    end
-    local childAddedConnection
-    childAddedConnection = newCharacter.ChildAdded:Connect(function(child)
-        if child:IsA('Tool') and GUN_NAMES[child.Name] then
-            task.wait(0.1)
-            patchGun(child)
-            dbgWarn('Patched new gun ' .. child.Name .. ' on new character')
-        end
-    end)
-    newCharacter.AncestryChanged:Connect(function()
-        if not newCharacter:IsDescendantOf(workspace) then
-            childAddedConnection:Disconnect()
-            dbgWarn('Disconnected ChildAdded listener for old character')
-        end
-    end)
-    applyWallbang()
-    hookGunHandlerShoot()
-    dbgWarn('Character respawned, re-patched guns')
-end)
-
--- Shared Script Label (Execute on main account and alts/friends)
--- Edit this:
-local MAIN_USERID = 7707208413 -- Your main account's UserId (number)
-
--- Mark this player as a script user
-local scriptUserFlag = Instance.new('BoolValue')
-scriptUserFlag.Name = 'ScriptUser'
+local scriptUserFlag = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11655,11655,11340,9030,10185,11340,12285,10605}))
+scriptUserFlag.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})
 scriptUserFlag.Value = true
 scriptUserFlag.Parent = LocalPlayer
 
--- Label function: Add BillboardGui for main user (non-main script users) or script users (main account)
 local function addLabel(player)
-    -- Main account: Create "Alt User" labels for script users
     if
         LocalPlayer.UserId == MAIN_USERID
         and player ~= LocalPlayer
-        and player:FindFirstChild('ScriptUser')
+        and player:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
         and player.Character
-        and player.Character:FindFirstChild('Head')
+        and player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
     then
         local head = player.Character.Head
-        if head:FindFirstChild('AltUserLabel') then
+        if head:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340})) then
             return
         end
-        local billboard = Instance.new('BillboardGui')
-        billboard.Name = 'AltUserLabel'
+        local billboard = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}))
+        billboard.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340})
         billboard.Adornee = head
-        billboard.Size = UDim2.new(4, 0, 1, 0) -- Scale units for fixed size on zoom
+        billboard.Size = UDim2.new(4, 0, 1, 0)
         billboard.StudsOffset = Vector3.new(0, 3, 0)
         billboard.AlwaysOnTop = true
 
-        local textLabel = Instance.new('TextLabel')
+        local textLabel = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
         textLabel.Size = UDim2.new(1, 0, 1, 0)
         textLabel.BackgroundTransparency = 1
-        textLabel.Text = 'Alt User'
-        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White
+        textLabel.Text = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11340,12180,3360,8925,12075,10605,11970})
+        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
         textLabel.TextScaled = false
-        textLabel.TextSize = 24 -- Normal size
+        textLabel.TextSize = 24
         textLabel.Font = Enum.Font.SourceSansBold
         textLabel.Parent = billboard
 
         billboard.Parent = head
-    -- Non-main script users: Create "Owner" label for main user
     elseif
         LocalPlayer.UserId ~= MAIN_USERID
-        and LocalPlayer:FindFirstChild('ScriptUser')
+        and LocalPlayer:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
         and player.UserId == MAIN_USERID
         and player.Character
-        and player.Character:FindFirstChild('Head')
+        and player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500}))
     then
         local head = player.Character.Head
-        if head:FindFirstChild('OwnerLabel') then
+        if head:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340})) then
             return
         end
-        local billboard = Instance.new('BillboardGui')
-        billboard.Name = 'OwnerLabel'
+        local billboard = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}))
+        billboard.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340})
         billboard.Adornee = head
-        billboard.Size = UDim2.new(4, 0, 1, 0) -- Scale units for fixed size on zoom
+        billboard.Size = UDim2.new(4, 0, 1, 0)
         billboard.StudsOffset = Vector3.new(0, 3, 0)
         billboard.AlwaysOnTop = true
 
-        local textLabel = Instance.new('TextLabel')
+        local textLabel = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
         textLabel.Size = UDim2.new(1, 0, 1, 0)
         textLabel.BackgroundTransparency = 1
-        textLabel.Text = 'Owner'
-        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255) -- White
+        textLabel.Text = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8295,12495,11550,10605,11970})
+        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
         textLabel.TextScaled = false
-        textLabel.TextSize = 24 -- Normal size
+        textLabel.TextSize = 24
         textLabel.Font = Enum.Font.SourceSansBold
         textLabel.Parent = billboard
 
@@ -1572,28 +1900,26 @@ local function addLabel(player)
     end
 end
 
--- Remove label
 local function removeLabel(player)
-    if player.Character and player.Character:FindFirstChild('Head') then
+    if player.Character and player.Character:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({7560,10605,10185,10500})) then
         local head = player.Character.Head
         if
             LocalPlayer.UserId == MAIN_USERID
-            and head:FindFirstChild('AltUserLabel')
+            and head:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340}))
         then
             head.AltUserLabel:Destroy()
         elseif
             LocalPlayer.UserId ~= MAIN_USERID
-            and LocalPlayer:FindFirstChild('ScriptUser')
-            and head:FindFirstChild('OwnerLabel')
+            and LocalPlayer:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
+            and head:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340}))
         then
             head.OwnerLabel:Destroy()
         end
     end
 end
 
--- Monitor players for labels
 local function updateLabels()
-    if not LocalPlayer:FindFirstChild('ScriptUser') then
+    if not LocalPlayer:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})) then
         return
     end
     for _, player in ipairs(Players:GetPlayers()) do
@@ -1601,7 +1927,7 @@ local function updateLabels()
             (
                 LocalPlayer.UserId == MAIN_USERID
                 and player ~= LocalPlayer
-                and player:FindFirstChild('ScriptUser')
+                and player:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
             )
             or (
                 LocalPlayer.UserId ~= MAIN_USERID
@@ -1615,23 +1941,20 @@ local function updateLabels()
     end
 end
 
--- Run label updates on heartbeat and when players join/leave
-if LocalPlayer:FindFirstChild('ScriptUser') then
+if LocalPlayer:FindFirstChild(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})) then
     RunService.Heartbeat:Connect(updateLabels)
     Players.PlayerAdded:Connect(updateLabels)
     Players.PlayerRemoving:Connect(updateLabels)
 end
 
--- Handle character respawn
 LocalPlayer.CharacterAdded:Connect(function()
-    task.wait(1) -- Wait for character to load
-    -- Re-apply script user flag
-    local newFlag = Instance.new('BoolValue')
-    newFlag.Name = 'ScriptUser'
+    task.wait(1)
+    local newFlag = Instance.new(UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({6930,11655,11655,11340,9030,10185,11340,12285,10605}))
+    newFlag.Name = UWrGiMXXgqUhCRrpfzDPoBQYvvNCxvkqepjLptqLIJWOzZfDtJhuIrmTZOpTpClyxqCeNOdPiwLbtaTBVhKXxTUyqBFJwgOl({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})
     newFlag.Value = true
     newFlag.Parent = LocalPlayer
     updateLabels()
 end)
 
--- Initial label update
 updateLabels()
+    
