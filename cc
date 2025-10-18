@@ -979,7 +979,7 @@ do
 		version.BackgroundTransparency = 1
 		version.BorderSizePixel = 0
 		version.BorderColor3 = Color3.new(0,0,0)
-		version.Text = "<font color=\"#4e4e4e\">version: </font> live"
+		version.Text = "<font color=\"#4e4e4e\">version: </font> v2"
 		version.TextColor3 = Library.Accent
 		version.FontFace = Library.UIFont
 		version.TextSize = Library.FontSize
