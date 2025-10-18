@@ -3429,7 +3429,7 @@ function Library:Configs(tab)
             Options = {"Yes", "No"},
             Callback = function(option)
                 if option == "Yes" then 
-					LocalPlayer:Kick('['..Library.nigger..']'..' Rejoining Server')
+					LocalPlayer:Kick('['..Library.cheatname..']'..' Rejoining Server')
 					TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId);
                 end 
             end
@@ -3442,7 +3442,7 @@ function Library:Configs(tab)
             Options = {"Yes", "No"},
             Callback = function(option)
                 if option == "Yes" then 
-					LocalPlayer:Kick('['..Library.nigger..']'..' Rejoining Game')
+					LocalPlayer:Kick('['..Library.cheatname..']'..' Rejoining Game')
 					TeleportService:Teleport(game.PlaceId);
                 end 
             end
