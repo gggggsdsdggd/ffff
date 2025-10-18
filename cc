@@ -3373,29 +3373,56 @@ function Library:Configs(tab)
 		cfg_list:Refresh(Library:GetConfigs())
 	end})
 	--
-	cfgs:Button({Name = "Save", Callback = function()
+cfgs:Button({
+	Name = "Save",
+	Callback = function()
 		local selected_config = Library.Flags.setting_configuration_list
-		if selected_config then
-			Library:Panel({
-				Name = "Are you sure you want to save the config '".. selected_config .."' ?",
-				Options = {"Yes", "No"},
-				Callback = function(option)
-					if option == "Yes" then 
-						Library:SaveConfig(selected_config)
-					end 
+		if not selected_config or selected_config == "" then return end
+
+		local path = string.format("%s/%s/configs/%s%s",
+			Library.cheatname,
+			Library.gamename,
+			selected_config,
+			Library.fileext
+		)
+
+		if not isfolder(Library.cheatname.."/"..Library.gamename.."/configs") then
+			makefolder(Library.cheatname.."/"..Library.gamename.."/configs")
+		end
+
+		Library:Panel({
+			Name = "Are you sure you want to save '"..selected_config.."'?",
+			Options = {"Yes", "No"},
+			Callback = function(option)
+				if option == "Yes" then
+					Library:SaveConfig(path)
 				end
-			})
-		end
-	end})
-	--
-	cfgs:Button({Name = "Load", Callback = function()
-		local selected_config = Library.Flags.setting_configuration_list
-		if selected_config then
-			if isfile(Library.cheatname..'/'..Library.gamename.."/configs".."/" .. selected_config .. Library.fileext) then
-				Library:LoadConfig(Library.cheatname..'/'..Library.gamename.."/configs".."/" .. selected_config .. Library.fileext)
 			end
+		})
+	end
+})
+
+cfgs:Button({
+	Name = "Load",
+	Callback = function()
+		local selected_config = Library.Flags.setting_configuration_list
+		if not selected_config or selected_config == "" then return end
+
+		local path = string.format("%s/%s/configs/%s%s",
+			Library.cheatname,
+			Library.gamename,
+			selected_config,
+			Library.fileext
+		)
+
+		if isfile(path) then
+			Library:LoadConfig(path)
+		else
+			warn("Config not found:", path)
 		end
-	end})
+	end
+})
+
 	--
 	cfgs:Button({Name = 'Delete', Callback = function()
 		local selected_config = Library.Flags.setting_configuration_list
