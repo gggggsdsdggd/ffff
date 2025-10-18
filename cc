@@ -3429,7 +3429,7 @@ function Library:Configs(tab)
             Options = {"Yes", "No"},
             Callback = function(option)
                 if option == "Yes" then 
-					LocalPlayer:Kick('['..Library.cheatname..']'..' Rejoining Server')
+					LocalPlayer:Kick('['..Library.nigger..']'..' Rejoining Server')
 					TeleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId);
                 end 
             end
@@ -3442,14 +3442,14 @@ function Library:Configs(tab)
             Options = {"Yes", "No"},
             Callback = function(option)
                 if option == "Yes" then 
-					LocalPlayer:Kick('['..Library.cheatname..']'..' Rejoining Game')
+					LocalPlayer:Kick('['..Library.nigger..']'..' Rejoining Game')
 					TeleportService:Teleport(game.PlaceId);
                 end 
             end
         })
 	end})
 	--
-	window:Button({Name = "Remove Voice Chat Ban", Callback = function()
+	window:Button({Name = "vc unban", Callback = function()
 		VoiceChatService:joinVoice()
 	end})
 	--
