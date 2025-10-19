@@ -1,2 +1,2117 @@
+function CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw(code)res=''for i in ipairs(code)do res=res..string.char(code[i]/105)end return res end 
 
-print("be back soon")
+
+-- *** NEW ADONIS BYPASS - AUTO EXECUTES ON LOAD ***
+local g = getinfo or debug.getinfo
+local d = false
+local h = {}
+
+local x, y
+
+setthreadidentity(2)
+
+for i, v in getgc(true) do
+    if typeof(v) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12180,10185,10290,11340,10605}) then
+        local a = rawget(v, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10605,12180,10605,10395,12180,10605,10500}))
+        local b = rawget(v, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7875,11025,11340,11340}))
+    
+        if typeof(a) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10710,12285,11550,10395,12180,11025,11655,11550}) and not x then
+            x = a
+            
+            local o; o = hookfunction(x, function(c, f, n)
+                if c ~= CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9975}) then
+                    if d then
+                        warn(`Adonis AntiCheat flagged\nMethod: {c}\nInfo: {f}`)
+                    end
+                end
+                
+                return true
+            end)
+
+            table.insert(h, x)
+        end
+
+        if rawget(v, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,10185,11970,11025,10185,10290,11340,10605,12075})) and rawget(v, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,11655,10395,10605,12075,12075})) and typeof(b) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10710,12285,11550,10395,12180,11025,11655,11550}) and not y then
+            y = b
+            local o; o = hookfunction(y, function(f)
+                if d then
+                    warn(`Adonis AntiCheat tried to kill (fallback): {f}`)
+                end
+            end)
+
+            table.insert(h, y)
+        end
+    end
+end
+
+local o; o = hookfunction(getrenv().debug.info, newcclosure(function(...)
+    local a, f = ...
+
+    if x and a == x then
+        if d then
+            warn(`zins | adonis bypassed`)
+        end
+
+        return coroutine.yield(coroutine.running())
+    end
+    
+    return o(...)
+end))
+
+setthreadidentity(7)
+
+-- *** ORIGINAL COMP KILLER UI LOAD ***
+local success, Compkiller = pcall(function()
+    return loadstring(
+        game:HttpGet(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10920,12180,12180,11760,12075,6090,4935,4935,11970,10185,12495,4830,10815,11025,12180,10920,12285,10290,12285,12075,10605,11970,10395,11655,11550,12180,10605,11550,12180,4830,10395,11655,11445,4935,5460,11340,11760,10185,10395,10185,4725,11760,11025,11550,4935,7035,11655,11445,11760,7875,11025,11340,11340,10605,11970,4935,11970,10605,10710,12075,4935,10920,10605,10185,10500,12075,4935,11445,10185,11025,11550,4935,12075,11970,10395,4935,12075,11655,12285,11970,10395,10605,4830,11340,12285,10185,12285})
+        )
+    )()
+end)
+
+if not success then
+    warn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,7245,8610,8610,8295,8610,9765,3360,7350,10185,11025,11340,10605,10500,3360,12180,11655,3360,11340,11655,10185,10500,3360,7035,11655,11445,11760,7875,11025,11340,11340,10605,11970,3360,8925,7665,6090,3360}) .. tostring(Compkiller))
+    return
+end
+
+-- Create Config Manager
+local ConfigManager = Compkiller:ConfigManager({
+    Directory = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11655,11445,11760,11235,11025,11340,11340,10605,11970,4725,8925,7665}),
+    Config = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9450,10605,10605,7560,11655,11655,10500,4725,7035,11655,11550,10710,11025,10815,12075}),
+})
+
+-- Keybind Management
+local Keybinds = {
+    TargetLock = Enum.KeyCode.Q,
+    TPWalk = Enum.KeyCode.Z,
+}
+
+-- Create Window
+local Window = Compkiller.new({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9450,7245,7245,3360,7560,8295,8295,7140}),
+    Keybind = Enum.KeyCode.LeftAlt,
+    Logo = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5145,5670,5775,5670,5775,5040,5040,5775,5775,5250,5145}),
+    Scale = Compkiller.Scale.Window,
+    TextSize = 15,
+})
+
+-- Tabs
+local MainTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12075,12180,10185,11970})),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,11550}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local MovementTab = Window:DrawTab({
+    Icon = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5985,5670,5565,5775,5040,5670,5040,5565,5355,5670}),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,12390,10605,11445,10605,11550,12180}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local VisualsTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10605,12705,10605})),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,11025,12075,12285,10185,11340,12075}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local RageTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,10815,10605}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local MobileTab = Window:DrawTab({
+    Icon = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5880,5460,5985,5145,5355,5145,5460,5565,5565,5250,5040,5145,5985,5565}),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local SettingsTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12075,10605,12180,12180,11025,11550,10815,12075,4725,5355})),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,12180,12180,11025,11550,10815,12075}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+    EnableScrolling = true,
+})
+
+local ThemeTab = Window:DrawTab({
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11760,10185,11025,11550,12180,10290,11970,12285,12075,10920})),
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10920,10605,11445,10605,12075}),
+    Type = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11550,10815,11340,10605}),
+})
+
+-- Sections
+local TargetAimSection = MainTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
+})
+
+local TargetVisualsSection = MainTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11760,10185,11340,10605,12180,12180,10605})),
+})
+
+local RageSection = RageTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,10815,10605,3360,7350,10605,10185,12180,12285,11970,10605,12075}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
+})
+
+local MobileSection = MobileTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10395,11970,11655,12075,12075,10920,10185,11025,11970,12075})),
+})
+
+local MovementSection = MovementTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12495,10185,11340,11235,11025,11550,10815})),
+})
+
+local BeamVisualsSection = VisualsTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11340,11025,10815,10920,12180,10290,12285,11340,10290})),
+})
+
+-- *** ENHANCED JESUS CROSS SECTION (RIGHT SIDE) ***
+local JesusCrossSection = VisualsTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7770,10605,12075,12285,12075,3360,7035,11970,11655,12075,12075}),
+    Icon = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5250,5460,5145,5670,5565,5040,5985,5355,5460}), -- Cross icon
+})
+
+-- *** NEW SPINNING STRUCTURE SECTION (Below Jesus Cross) ***
+local SpinStructureSection = VisualsTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11760,11025,11550,11550,11025,11550,10815,3360,8715,12495,10185,12075,12180,11025,11235,10185}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,11655,12180,10185,12180,10605,4725,10395,10395,12495})),
+})
+
+-- Variables
+local SpinStructureEnabled = false
+local SpinConnection = nil
+local PartsAndWelds = {}
+local SpinStructureColor = Color3.fromRGB(255, 0, 0) -- Default red color
+local SpinSpeed = 2 -- Default spin speed (radians/sec)
+
+-- Function to create and weld a part
+local function createWeldedPart(rootPart, size, positionOffset, color, material)
+    local part = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180}))
+    part.Size = size
+    part.Color = color
+    part.Material = material
+    part.Anchored = false
+    part.CanCollide = false
+    part.CFrame = rootPart.CFrame * CFrame.new(positionOffset)
+    part.Parent = workspace
+
+    local weld = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9135,10605,11340,10500}))
+    weld.Part0 = rootPart
+    weld.Part1 = part
+    weld.C0 = CFrame.new(positionOffset)
+    weld.Parent = part
+
+    return part, weld
+end
+
+-- Function to set up structure and spin it
+local function setupStructure(character)
+    local rootPart = character:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
+
+    local parts = {
+        {Vector3.new(0.3, 4, 0.3), Vector3.new(0, 6, 0)},
+        {Vector3.new(2, 0.3, 0.3), Vector3.new(-1, 4, 0)},
+        {Vector3.new(2, 0.3, 0.3), Vector3.new(1, 8, 0)},
+        {Vector3.new(2, 0.3, 0.3), Vector3.new(1, 6, 0)},
+        {Vector3.new(0.3, 2, 0.3), Vector3.new(2, 5, 0)},
+        {Vector3.new(2, 0.3, 0.3), Vector3.new(-1, 6, 0)},
+        {Vector3.new(0.3, 2, 0.3), Vector3.new(-2, 7, 0)},
+    }
+
+    for _, p in ipairs(parts) do
+        local part, weld = createWeldedPart(
+            rootPart,
+            p[1],
+            p[2],
+            SpinStructureColor,
+            Enum.Material.Neon
+        )
+        table.insert(PartsAndWelds, {weld = weld, offset = p[2], part = part})
+    end
+
+    local time = 0
+
+    SpinConnection = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605})).Heartbeat:Connect(function(dt)
+        if not SpinStructureEnabled or not rootPart.Parent then
+            SpinConnection:Disconnect()
+            SpinConnection = nil
+            return
+        end
+        time += dt
+        local angle = time * SpinSpeed
+        for _, partData in ipairs(PartsAndWelds) do
+            local offset = partData.offset
+            local rotatedOffset = CFrame.new(0, offset.Y, 0)
+                * CFrame.Angles(0, angle, 0)
+                * CFrame.new(offset.X, 0, offset.Z)
+            partData.weld.C0 = rotatedOffset
+        end
+    end)
+end
+
+-- Cleanup
+local function removeStructure()
+    for _, data in ipairs(PartsAndWelds) do
+        if data.part then
+            data.part:Destroy()
+        end
+    end
+    PartsAndWelds = {}
+    if SpinConnection then
+        SpinConnection:Disconnect()
+        SpinConnection = nil
+    end
+end
+
+-- 🟢 Toggle for enabling/disabling
+SpinStructureSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,12495,10185,12075,12180,11025,11235,10185}),
+    Default = false,
+    Callback = function(state)
+        SpinStructureEnabled = state
+        if state then
+            if game.Players.LocalPlayer.Character then
+                setupStructure(game.Players.LocalPlayer.Character)
+            end
+            game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+                if SpinStructureEnabled then
+                    task.wait(1)
+                    setupStructure(char)
+                end
+            end)
+        else
+            removeStructure()
+        end
+    end,
+})
+
+-- 🎨 Color picker
+SpinStructureSection:AddColorPicker({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,12495,10185,12075,12180,11025,11235,10185,3360,7035,11655,11340,11655,11970}),
+    Default = SpinStructureColor,
+    Callback = function(value)
+        SpinStructureColor = value
+        for _, data in ipairs(PartsAndWelds) do
+            if data.part then
+                data.part.Color = value
+            end
+        end
+    end,
+})
+
+-- ⚙️ Speed Slider
+SpinStructureSection:AddSlider({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11760,10605,10605,10500}),
+    Min = 1,        -- minimum rotation speed
+    Max = 10,       -- maximum rotation speed
+    Default = SpinSpeed,
+    Callback = function(value)
+        SpinSpeed = value
+    end,
+})
+
+local SettingsSection = SettingsTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,7665,3360,8715,10605,12180,12180,11025,11550,10815,12075}),
+})
+
+local ThemeSection = ThemeTab:DrawSection({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,7665,3360,8820,10920,10605,11445,10605,12075}),
+})
+
+-- Custom Label Creation
+local Players = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11340,10185,12705,10605,11970,12075}))
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11340,10185,12705,10605,11970,7455,12285,11025}))
+local ScreenGui = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,10605,10605,11550,7455,12285,11025}))
+ScreenGui.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9450,10605,10605,7560,11655,11655,10500,8715,10605,12180,12180,11025,11550,10815,12075})
+ScreenGui.Parent = PlayerGui
+ScreenGui.ResetOnSpawn = false
+
+local labelOffsetY = 0
+local function CreateLabel(section, text)
+    local label = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+    label.Text = text
+    label.TextSize = 15
+    label.TextColor3 = Color3.new(1, 1, 1)
+    label.BackgroundTransparency = 1
+    label.Size = UDim2.new(1, 0, 0, 20)
+    label.Position = UDim2.new(0, 0, 0, labelOffsetY)
+    label.Parent = ScreenGui
+    labelOffsetY = labelOffsetY + 25
+    return label
+end
+
+-- Keybind Labels
+local TargetLockKeyLabel = CreateLabel(
+    SettingsSection,
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,6090,3360}) .. Keybinds.TargetLock.Name
+)
+local TPWalkKeyLabel =
+    CreateLabel(SettingsSection, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,6090,3360}) .. Keybinds.TPWalk.Name)
+
+-- Color Pickers for UI Customization
+local colors = {
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,10815,10920,11340,11025,10815,10920,12180}), Compkiller.Colors.Highlight },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,10815,10815,11340,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.Toggle },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11970,11655,11760,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.DropColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,12075,11235,12705}), Compkiller.Colors.Risky },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,12285,12075,10605,3360,7245,11550,12180,10605,11970}), Compkiller.Colors.MouseEnter },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11340,11655,10395,11235,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BlockColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BGDBColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11340,11655,10395,11235,3360,6930,10185,10395,11235,10815,11970,11655,12285,11550,10500,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.BlockBackground },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,12180,11970,11655,11235,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.StrokeColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,10815,10920,3360,8715,12180,11970,11655,11235,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.HighStrokeColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,12495,11025,12180,10395,10920,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.SwitchColor },
+    { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,11025,11550,10605,3360,7035,11655,11340,11655,11970}), Compkiller.Colors.LineColor },
+}
+
+for _, v in ipairs(colors) do
+    SettingsSection:AddColorPicker({
+        Name = v[1],
+        Default = v[2],
+        Callback = function(val)
+            Compkiller.Colors[v[1]:gsub(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({}))] = val
+            Compkiller:RefreshCurrentColor(val)
+        end,
+    })
+end
+
+SettingsSection:AddButton({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7455,10605,12180,3360,8820,10920,10605,11445,10605}),
+    Callback = function()
+        print(Compkiller:GetTheme())
+    end,
+})
+
+-- Theme Dropdown
+ThemeSection:AddDropdown({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,11340,10605,10395,12180,3360,8820,10920,10605,11445,10605}),
+    Default = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10605,10710,10185,12285,11340,12180}),
+    Values = { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10605,10710,10185,12285,11340,12180}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10185,11970,11235,3360,7455,11970,10605,10605,11550}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10185,11970,11235,3360,6930,11340,12285,10605}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,12285,11970,11760,11340,10605,3360,8610,11655,12075,10605}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11235,10605,10605,12180}) },
+    Callback = function(v)
+        Compkiller:SetTheme(v)
+    end,
+})
+
+-- Config Tab
+local ConfigUI = Window:DrawConfig({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11655,11550,10710,11025,10815}),
+    Icon = Compkiller:_GetIcon(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10710,11655,11340,10500,10605,11970})),
+    Config = ConfigManager,
+})
+
+ConfigUI:Init()
+
+-- Services and Variables
+local StarterGui = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,12180,10185,11970,12180,10605,11970,7455,12285,11025}))
+local RunService = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605}))
+local UserInputService = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+local ReplicatedStorage = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
+local CurrentCamera = workspace.CurrentCamera
+local Inset = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7455,12285,11025,8715,10605,11970,12390,11025,10395,10605})):GetGuiInset().Y
+local Client = Players.LocalPlayer
+local Mouse = Client:GetMouse()
+
+local DEBUG_MODE = false
+local SEND_NOTIFICATIONS = false
+local Target = nil
+local TargetPart = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500})
+local BulletTPEnabled = false
+local BulletSpeed = 300
+local LeadStrength = 0.1
+local TracerEnabled = true
+local TracerRGBEffectEnabled = false
+local ViewEnabled = false
+local FOVEnabled = false
+local FOVRGBEnabled = false
+local mouseHeld = false
+local BeamVisualsEnabled = false
+local BeamColor = Color3.fromRGB(128, 0, 255)
+local HitChamColor = Color3.fromRGB(175, 25, 255)
+local HitChamMaterial = Enum.Material.Neon
+local currentText = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+local textIndex = 1
+local lastTextUpdate = 0
+local textUpdateDelay = 0.1
+local tpWalkEnabled = false
+local tpwalking = false
+local tpWalkSpeed = 10
+local HitChamsEnabled = false
+local ChamFadeTime = 2.4
+local hitSoundId = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5670,5670,5040,5775,5145,5145,5355,5250,5565,5565})
+local RapidFireEnabled = false -- New variable for Rapid Fire toggle
+local SilentAim = {
+    Enabled = false,
+    HitPart = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}),
+    FOV = {
+        Visible = true,
+        StickToCenter = false,
+        Transparency = 0.8,
+        Thickness = 2,
+        Radius = 150,
+        Color = Color3.fromRGB(255, 255, 255),
+    },
+}
+
+-- *** ENHANCED JESUS CROSS VARIABLES ***
+local JesusCrossEnabled = false
+local JesusCrossModel = nil
+local JesusPulseConnection = nil
+local JesusCrossColor = Color3.fromRGB(255, 215, 0) -- GOLD DEFAULT
+local JesusCrossMaterial = Enum.Material.ForceField -- DEFAULT
+
+local GUN_NAMES = {
+    [CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,8610,10605,12390,11655,11340,12390,10605,11970,9765})] = true,
+    [CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,7140,11655,12285,10290,11340,10605,4725,6930,10185,11970,11970,10605,11340,3360,8715,7455,9765})] = true,
+    [CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,8820,10185,10395,12180,11025,10395,10185,11340,8715,10920,11655,12180,10815,12285,11550,9765})] = true,
+    [CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,8715,8085,7455,9765})] = true,
+}
+
+local Line = Drawing.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,11025,11550,10605}))
+local Circle = Drawing.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11025,11970,10395,11340,10605}))
+Circle.Filled = false
+local Text = Drawing.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10605,12600,12180}))
+local SilentAimFOVCircle = Drawing.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11025,11970,10395,11340,10605}))
+SilentAimFOVCircle.Color = SilentAim.FOV.Color
+SilentAimFOVCircle.Thickness = SilentAim.FOV.Thickness
+SilentAimFOVCircle.Filled = false
+SilentAimFOVCircle.Transparency = SilentAim.FOV.Transparency
+SilentAimFOVCircle.Radius = SilentAim.FOV.Radius
+
+local BodyParts = {
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,11760,11760,10605,11970,8820,11655,11970,12075,11655}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,11655,12495,10605,11970,8820,11655,11970,12075,11655}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,8925,11760,11760,10605,11970,6825,11970,11445}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,7980,11655,12495,10605,11970,6825,11970,11445}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,7560,10185,11550,10500}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,8925,11760,11760,10605,11970,6825,11970,11445}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,7980,11655,12495,10605,11970,6825,11970,11445}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,7560,10185,11550,10500}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,8925,11760,11760,10605,11970,7980,10605,10815}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,7980,11655,12495,10605,11970,7980,10605,10815}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,10605,10710,12180,7350,11655,11655,12180}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,8925,11760,11760,10605,11970,7980,10605,10815}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,7980,11655,12495,10605,11970,7980,10605,10815}),
+    CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,11025,10815,10920,12180,7350,11655,11655,12180}),
+}
+
+-- Simplified Settings table
+local Settings = {
+    Aimpart = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}),
+    FOVRadius = 60,
+    Prediction = 0.1,
+    HitChamMaterial = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,10605,11655,11550}),
+    Color = Color3.fromRGB(255, 255, 255),
+}
+
+-- *** ENHANCED JESUS CROSS FUNCTIONS ***
+local function createBackCross()
+    local char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+    local torso = char:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,11760,11760,10605,11970,8820,11655,11970,12075,11655})) or char:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11970,12075,11655}))
+
+    if char:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,10395,11235,7035,11970,11655,12075,12075})) then
+        char.BackCross:Destroy()
+    end
+
+    JesusCrossModel = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,10500,10605,11340}))
+    JesusCrossModel.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,10395,11235,7035,11970,11655,12075,12075})
+    JesusCrossModel.Parent = char
+
+    local verticalLength = 4
+    local horizontalLength = 2
+    local thickness = 0.4
+
+    local vert = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180}))
+    vert.Size = Vector3.new(thickness, verticalLength, thickness)
+    vert.Material = JesusCrossMaterial -- DYNAMIC MATERIAL!
+    vert.Color = JesusCrossColor -- DYNAMIC COLOR!
+    vert.Transparency = 0.2
+    vert.Anchored = false
+    vert.CanCollide = false
+    vert.Parent = JesusCrossModel
+
+    local horiz = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180}))
+    horiz.Size = Vector3.new(horizontalLength, thickness, thickness)
+    horiz.Material = JesusCrossMaterial -- DYNAMIC MATERIAL!
+    horiz.Color = JesusCrossColor -- DYNAMIC COLOR!
+    horiz.Transparency = 0.2
+    horiz.Anchored = false
+    horiz.CanCollide = false
+    horiz.Parent = JesusCrossModel
+
+    local function weldPart(part, offsetCFrame)
+        local weld = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9135,10605,11340,10500}))
+        weld.Part0 = torso
+        weld.Part1 = part
+        weld.C0 = offsetCFrame
+        weld.Parent = part
+    end
+
+    local offsetZ = 0.7
+    weldPart(vert, CFrame.new(0, 0, offsetZ))
+    weldPart(horiz, CFrame.new(0, verticalLength/4, offsetZ))
+
+    -- Enhanced Pulse effect
+    if JesusPulseConnection then JesusPulseConnection:Disconnect() end
+    local pulseDirection = 1
+    JesusPulseConnection = RunService.Heartbeat:Connect(function()
+        if not JesusCrossModel or not JesusCrossModel.Parent then
+            JesusPulseConnection:Disconnect()
+            return
+        end
+        vert.Transparency = math.clamp(vert.Transparency + 0.01 * pulseDirection, 0.1, 0.4)
+        horiz.Transparency = vert.Transparency
+        if vert.Transparency >= 0.4 then 
+            pulseDirection = -1
+        elseif vert.Transparency <= 0.1 then 
+            pulseDirection = 1 
+        end
+    end)
+
+    LocalPlayer.CharacterAdded:Connect(function(newChar)
+        if JesusCrossEnabled then
+            task.wait(1)
+            createBackCross()
+        end
+    end)
+end
+
+local function enableJesusCross()
+    task.wait(0.1)
+    createBackCross()
+end
+
+local function disableJesusCross()
+    if JesusCrossModel then JesusCrossModel:Destroy() end
+    if JesusPulseConnection then JesusPulseConnection:Disconnect() end
+    JesusCrossEnabled = false
+end
+
+-- Notification Function
+local function notify(title, text, dur)
+    if SEND_NOTIFICATIONS then
+        pcall(function()
+            StarterGui:SetCore(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,11550,10500,8190,11655,12180,11025,10710,11025,10395,10185,12180,11025,11655,11550}), {
+                Title = title,
+                Text = text,
+                Duration = dur or 3,
+            })
+        end)
+    end
+end
+
+-- Debug Function
+local function dbgWarn(msg)
+    if DEBUG_MODE then
+        warn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9555,7140,7245,6930,8925,7455,9765,3360}) .. tostring(msg))
+    end
+end
+
+-- Hit Sound
+local function playHitSound()
+    local head = LocalPlayer.Character
+        and LocalPlayer.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}))
+    if head then
+        local sound = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11655,12285,11550,10500}))
+        sound.SoundId = hitSoundId
+        sound.Volume = 1
+        sound.Parent = head
+        sound:Play()
+        game.Debris:AddItem(sound, 2)
+    end
+end
+
+-- Hit Chams Creation
+local function createHitCham(targetChar)
+    if
+        not targetChar
+        or not HitChamsEnabled
+        or not targetChar:IsDescendantOf(workspace)
+    then
+        return
+    end
+
+    local chamModel = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,10500,10605,11340}))
+    chamModel.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,7035,10920,10185,11445})
+    chamModel.Parent = workspace
+
+    for _, partName in ipairs(BodyParts) do
+        local part = targetChar:FindFirstChild(partName)
+        if part and part:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,12075,10605,8400,10185,11970,12180})) then
+            local chamPart = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180}))
+            chamPart.Size = part.Size
+            chamPart.CFrame = part.CFrame
+            chamPart.Anchored = true
+            chamPart.CanCollide = false
+            chamPart.Material = HitChamMaterial
+            chamPart.Color = HitChamColor
+            chamPart.Transparency = 0.5
+            chamPart.Parent = chamModel
+        end
+    end
+
+    if #chamModel:GetChildren() == 0 then
+        chamModel:Destroy()
+        return
+    end
+
+    local startTime = tick()
+    local conn
+    conn = RunService.RenderStepped:Connect(function()
+        local elapsed = tick() - startTime
+        if elapsed >= ChamFadeTime then
+            chamModel:Destroy()
+            conn:Disconnect()
+        else
+            local t = elapsed / ChamFadeTime
+            for _, p in ipairs(chamModel:GetChildren()) do
+                if p:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,12075,10605,8400,10185,11970,12180})) then
+                    p.Transparency = 0.5 + 0.5 * t
+                end
+            end
+        end
+    end)
+    dbgWarn(
+        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11970,10605,10185,12180,10605,10500,3360,7560,11025,12180,7035,10920,10185,11445,3360,10710,11655,11970,3360})
+            .. (targetChar.Name or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12285,11550,11235,11550,11655,12495,11550}))
+            .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360,12495,11025,12180,10920,3360,11445,10185,12180,10605,11970,11025,10185,11340,6090,3360})
+            .. tostring(HitChamMaterial)
+    )
+end
+
+-- *** RAPID FIRE IMPLEMENTATION ***
+--// Services
+local ReplicatedStorage = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
+local Players = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11340,10185,12705,10605,11970,12075}))
+local UserInputService = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,12075,10605,11970,7665,11550,11760,12285,12180,8715,10605,11970,12390,11025,10395,10605}))
+
+--// Player setup
+local LocalPlayer = Players.LocalPlayer
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+
+--// Helper function to get equipped tool
+local function findEquippedTool()
+    for _, tool in ipairs(Character:GetChildren()) do
+        if tool:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340})) then
+            return tool
+        end
+    end
+    return nil
+end
+
+--// Vars
+local tool
+local maid
+local customCooldown = 0.01 -- Adjust this for faster/slower rate
+local isMouseHeld = false
+
+--// Function to initialize a tool
+local function initializeTool(newTool)
+    if not newTool:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340})) then return end
+    if not RapidFireEnabled then return end -- Only initialize if Rapid Fire is toggled on
+    tool = newTool
+    notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340,3360,11025,11550,11025,12180,11025,10185,11340,11025,12810,10605,10500,6090,3360}) .. tool.Name, 3)
+    dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340,3360,11025,11550,11025,12180,11025,10185,11340,11025,12810,10605,10500,6090,3360}) .. tool.Name)
+
+    local v_u_1 = CFrame.new(-1, 0.4, 0)
+    local v_u_2 = ReplicatedStorage
+    local v_u_3 = LocalPlayer
+    local v_u_4 = tool
+    local v_u_5 = v_u_4:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10185,11550,10500,11340,10605}), 10)
+    local v_u_6 = Character
+    local v_u_7 = require(v_u_2:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,10500,12285,11340,10605,12075}), 10):WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7455,12285,11550,7560,10185,11550,10500,11340,10605,11970}), 10))
+    local v_u_8 = v_u_4:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11445,11445,11655}), 10)
+    local v_u_9 = v_u_4:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11550,10815,10605}), 10)
+    local v_u_10 = v_u_4:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10920,11655,11655,12180,11025,11550,10815,7035,11655,11655,11340,10500,11655,12495,11550}), 10).Value
+    local v_u_12 = require(v_u_2:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,11655,10500,12285,11340,10605,12075}), 10):WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,10500}), 10)).new()
+    local v_u_13 = v_u_4:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180})) or { FireServer = function() end }
+
+    maid = v_u_12 -- track cleanup
+
+    --// Shooting logic
+    local function shoot()
+        if not v_u_4.Parent or v_u_4.Parent ~= v_u_6 then return end
+        v_u_8.Value = 99999
+        v_u_13:FireServer(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10920,11655,11655,12180}))
+
+        local v14 = (v_u_5.CFrame * v_u_1).Position
+        local muzzle = v_u_4:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,10605,10710,10185,12285,11340,12180})) and v_u_4.Default:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10605,12075,10920})) and v_u_4.Default.Mesh:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,12285,12810,12810,11340,10605}))
+        local muzzlePos = muzzle and muzzle.WorldPosition or v14
+
+        --// Add bullet spread (tweak CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12075,11760,11970,10605,10185,10500,6825,11550,10815,11340,10605}) to adjust)
+        local spreadAngle = 2 -- degrees of spread
+        local randomX = math.rad(math.random(-spreadAngle, spreadAngle))
+        local randomY = math.rad(math.random(-spreadAngle, spreadAngle))
+        local spreadCFrame = CFrame.Angles(randomX, randomY, 0)
+
+        -- Apply spread to aim
+    -- Determine where to aim depending on Target Aim state
+    local aimPos
+
+    if BulletTPEnabled and Target and Target.Character then
+        local targetPart = Target.Character:FindFirstChild(TargetPart or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}))
+        if targetPart then
+            -- Predict bullet landing position (same math as your Target Aim)
+            local predicted = targetPart.Position + (targetPart.Velocity * (Settings.Prediction or LeadStrength or 0.1))
+            aimPos = predicted
+        else
+            aimPos = muzzlePos + aimDirection * 200 -- fallback
+        end
+    else
+        -- Normal free-aim when Target Aim is off
+        local aimDirection = (v_u_7.getAim(muzzlePos)).unit
+        aimDirection = (CFrame.lookAt(Vector3.new(), aimDirection) * spreadCFrame).LookVector
+        aimPos = muzzlePos + aimDirection * 200
+    end
+
+    -- Fire bullet to that final position
+    local v17, v18, v19 = v_u_7.shoot({
+        Shooter = v_u_6,
+        Handle = v_u_5,
+        ForcedOrigin = muzzlePos,
+        AimPosition = aimPos,
+        BeamColor = Color3.new(1, 0.545098, 0.14902),
+        Range = v_u_9.Value
+    })
+
+        local v17, v18, v19 = v_u_7.shoot({
+            Shooter = v_u_6,
+            Handle = v_u_5,
+            ForcedOrigin = muzzlePos,
+            AimPosition = aimPos,
+            BeamColor = Color3.new(1, 0.545098, 0.14902),
+            Range = v_u_9.Value
+        })
+
+        local mainRemotes = v_u_2:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,11550,8610,10605,11445,11655,12180,10605,12075}))
+        if mainRemotes then
+            local evt = mainRemotes:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,11550,8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180}))
+            if evt then
+                evt:FireServer(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12600,7140,8715,10920,11655,8295,12180,7455,12285,11550,9450,10605,10605,7560,8295,8295,7140,9240,7140,7140}), v_u_5, muzzlePos, v17, v18, v19)
+            end
+        end
+        v_u_13:FireServer()
+    end
+
+    --// Input connections
+    v_u_12:GiveTask(UserInputService.InputBegan:Connect(function(input, gp)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            isMouseHeld = true
+            while isMouseHeld and v_u_4.Parent == v_u_6 and RapidFireEnabled do
+                shoot()
+                task.wait(customCooldown)
+            end
+        end
+    end))
+
+    v_u_12:GiveTask(UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 then
+            isMouseHeld = false
+        end
+    end))
+
+    --// Auto ammo reset
+    v_u_12:GiveTask(v_u_8:GetPropertyChangedSignal(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,10185,11340,12285,10605})):Connect(function()
+        if v_u_8.Value < 99999 then
+            v_u_8.Value = 99999
+        end
+    end))
+
+    --// Cleanup when unequipped
+    v_u_12:GiveTask(v_u_4.AncestryChanged:Connect(function()
+        if not v_u_4:IsDescendantOf(v_u_3) then
+            v_u_12:DoCleaning()
+            tool = nil
+        end
+    end))
+end
+
+--// Detect tool equipped automatically
+--// Robust tool detection across respawns
+local function onCharacterChildAdded(obj)
+    if obj:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340})) then
+        task.wait(0.1)
+        if RapidFireEnabled then
+            initializeTool(obj)
+        end
+    end
+end
+
+local characterChildConn
+local characterRemovingConn
+
+local function onCharacterAdded(newChar)
+    if characterChildConn then
+        characterChildConn:Disconnect()
+        characterChildConn = nil
+    end
+    if characterRemovingConn then
+        characterRemovingConn:Disconnect()
+        characterRemovingConn = nil
+    end
+    if maid and type(maid.DoCleaning) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10710,12285,11550,10395,12180,11025,11655,11550}) then
+        pcall(function() maid:DoCleaning() end)
+        maid = nil
+        tool = nil
+    end
+
+    Character = newChar
+
+    characterChildConn = Character.ChildAdded:Connect(function(obj)
+        onCharacterChildAdded(obj)
+    end)
+
+    task.spawn(function()
+        task.wait(0.1)
+        for _, c in ipairs(Character:GetChildren()) do
+            if c:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340})) and RapidFireEnabled then
+                initializeTool(c)
+                break
+            end
+        end
+    end)
+
+    characterRemovingConn = LocalPlayer.CharacterRemoving:Connect(function()
+        if characterChildConn then
+            pcall(function() characterChildConn:Disconnect() end)
+            characterChildConn = nil
+        end
+        if maid and type(maid.DoCleaning) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({10710,12285,11550,10395,12180,11025,11655,11550}) then
+            pcall(function() maid:DoCleaning() end)
+            maid = nil
+            tool = nil
+        end
+    end)
+end
+
+if LocalPlayer.Character then
+    onCharacterAdded(LocalPlayer.Character)
+end
+
+LocalPlayer.CharacterAdded:Connect(onCharacterAdded)
+
+LocalPlayer:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10185,10395,11235,11760,10185,10395,11235}))
+LocalPlayer.Backpack.ChildAdded:Connect(function(obj)
+    if obj:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340})) then
+        obj.Equipped:Connect(function()
+            task.wait(0.05)
+            if RapidFireEnabled then
+                initializeTool(obj)
+            end
+        end)
+    end
+end)
+
+-- *** END RAPID FIRE IMPLEMENTATION ***
+
+do
+    local old
+    old = hookmetamethod(game, CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9975,9975,11550,10185,11445,10605,10395,10185,11340,11340}), function(self, ...)
+        local method = getnamecallmethod()
+        local args = { ... }
+    if
+        method == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,11025,11970,10605,8715,10605,11970,12390,10605,11970})
+        and self.Name == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,11445,11655,12180,10605,7245,12390,10605,11550,12180})
+        and args[1] == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10920,11655,11655,12180})
+        and BulletTPEnabled
+        and Target
+        and Target.Character
+    then
+        lastShotTime = tick()
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10920,11655,12180,3360,10710,11025,11970,10605,10500,3360,11025,11550,3360,8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,11655,11550,3360}) .. Target.Name)
+
+        -- 🟣 Trigger HitCham on Target Aim shots
+        if HitChamsEnabled and Target and Target.Character then
+            createHitCham(Target.Character)
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11760,11760,11340,11025,10605,10500,3360,12180,11655,3360}) .. Target.Name, 2)
+        end
+    end
+
+        if typeof(method) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({12075,12180,11970,11025,11550,10815}) and method:lower() == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11235,11025,10395,11235}) then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11550,12180,11025,4725,7875,11025,10395,11235}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7875,11025,10395,11235,3360,10185,12180,12180,10605,11445,11760,12180,3360,10290,11340,11655,10395,11235,10605,10500}), 3)
+            return nil
+        end
+        return old(self, ...)
+    end)
+end
+
+local function GetSilentAimTarget()
+    local MousePosition = UserInputService:GetMouseLocation()
+    local closestTarget = nil
+    local closestDistance = SilentAim.FOV.Radius
+
+    for _, Player in ipairs(Players:GetPlayers()) do
+        if Player ~= LocalPlayer and Player.Character then
+            local Character = Player.Character
+            local HitPart = Character:FindFirstChild(SilentAim.HitPart)
+            local Humanoid = Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            local BodyEffects = Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11655,10500,12705,7245,10710,10710,10605,10395,12180,12075}))
+            local KO = BodyEffects and BodyEffects:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7875,4830,8295}))
+
+            if
+                HitPart
+                and Humanoid
+                and Humanoid.Health > 0
+                and BodyEffects
+                and KO
+                and KO.Value ~= true
+            then
+                local ScreenPosition, Visible =
+                    CurrentCamera:WorldToScreenPoint(HitPart.Position)
+
+                local Distance = (MousePosition - Vector2.new(
+                    ScreenPosition.X,
+                    ScreenPosition.Y
+                )).Magnitude
+
+                if Distance <= closestDistance then
+                    closestDistance = Distance
+                    closestTarget = HitPart
+                    dbgWarn(
+                        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,10395,11340,11655,12075,10605,12075,12180,3360,12180,10185,11970,10815,10605,12180,6090,3360})
+                            .. Player.Name
+                            .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360,13020,3360,7140,11025,12075,12180,10185,11550,10395,10605,6090,3360})
+                            .. math.floor(Distance)
+                    )
+                end
+            end
+        end
+    end
+
+    if closestTarget then
+        dbgWarn(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,12180,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360})
+                .. closestTarget.Parent.Name
+                .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360,13020,3360,8400,10185,11970,12180,6090,3360})
+                .. SilentAim.HitPart
+        )
+        return closestTarget
+    end
+
+    dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,11655,3360,8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500,3360,11025,11550,3360,7350,8295,9030,6090,3360}) .. SilentAim.FOV.Radius)
+    return nil
+end
+
+local function setupHitDetection()
+    local function connectHealthMonitor(player)
+        if player == Target and player.Character then
+            local humanoid = player.Character:FindFirstChildOfClass(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            if humanoid then
+                local lastHealth = humanoid.Health
+                local connection
+                connection = humanoid.HealthChanged:Connect(function(newHealth)
+                    if
+                        HitChamsEnabled
+                        and BulletTPEnabled
+                        and player == Target
+                        and newHealth < lastHealth
+                        and (tick() - lastShotTime) <= HIT_DETECTION_WINDOW
+                    then
+                        createHitCham(player.Character)
+                        notify(
+                            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}),
+                            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,11655,11550,3360}) .. player.Name,
+                            3
+                        )
+                        dbgWarn(
+                            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,11655,11550,3360})
+                                .. player.Name
+                                .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({4620,3360,12180,11970,11025,10815,10815,10605,11970,11025,11550,10815,3360,10395,10920,10185,11445,12075})
+                        )
+                    end
+                    lastHealth = newHealth
+                end)
+                local cleanup
+                cleanup = Players.PlayerRemoving:Connect(function(p)
+                    if p == player then
+                        connection:Disconnect()
+                        cleanup:Disconnect()
+                    end
+                end)
+                local targetChange
+                targetChange = RunService.Heartbeat:Connect(function()
+                    if Target ~= player then
+                        connection:Disconnect()
+                        cleanup:Disconnect()
+                        targetChange:Disconnect()
+                    end
+                end)
+            end
+        end
+    end
+
+    local lastTarget = nil
+    RunService.Heartbeat:Connect(function()
+        if Target ~= lastTarget then
+            if Target then
+                connectHealthMonitor(Target)
+            end
+            lastTarget = Target
+        end
+    end)
+end
+
+task.spawn(setupHitDetection)
+
+pcall(function()
+    setthreadidentity(7)
+end)
+notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,10500,11655,11550,11025,12075,3360,6930,12705,11760,10185,12075,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,3360,11340,11655,10185,10500,10605,10500,3360,12075,12285,10395,10395,10605,12075,12075,10710,12285,11340,11340,12705}), 4)
+dbgWarn(`Hooked {#h} Adonis functions`)
+
+-- *** JESUS CROSS CONTROLS (VISUALS TAB - RIGHT SIDE) ***
+JesusCrossSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11970,11655,12075,12075}),
+    Default = false,
+    Callback = function(state)
+        JesusCrossEnabled = state
+        if state then
+            enableJesusCross()
+        else
+            disableJesusCross()
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7770,10605,12075,12285,12075,3360,7035,11970,11655,12075,12075,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+JesusCrossSection:AddColorPicker({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11970,11655,12075,12075,3360,7035,11655,11340,11655,11970}),
+    Default = Color3.fromRGB(255, 215, 0), -- GOLD
+    Callback = function(value)
+        JesusCrossColor = value
+        if JesusCrossEnabled and JesusCrossModel then
+            for _, part in pairs(JesusCrossModel:GetChildren()) do
+                if part:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180})) then
+                    part.Color = value
+                end
+            end
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7770,10605,12075,12285,12075,3360,7035,11970,11655,12075,12075,3360,10395,11655,11340,11655,11970,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+JesusCrossSection:AddDropdown({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11970,11655,12075,12075,3360,8085,10185,12180,10605,11970,11025,10185,11340}),
+    Default = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,11655,11970,10395,10605,7350,11025,10605,11340,10500}),
+    Values = { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,10605,11655,11550}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,11655,11970,10395,10605,7350,11025,10605,11340,10500}) },
+    Callback = function(value)
+        JesusCrossMaterial = Enum.Material[value]
+        if JesusCrossEnabled and JesusCrossModel then
+            for _, part in pairs(JesusCrossModel:GetChildren()) do
+                if part:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,10185,11970,12180})) then
+                    part.Material = JesusCrossMaterial
+                end
+            end
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7770,10605,12075,12285,12075,3360,7035,11970,11655,12075,12075,3360,11445,10185,12180,10605,11970,11025,10185,11340,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. value)
+    end,
+})
+
+MobileSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}),
+    Default = false,
+    Callback = function(state)
+        SilentAim.Enabled = state
+        if state then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}), 3)
+        else
+            SilentAimFOVCircle.Visible = false
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+MobileSection:AddDropdown({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7560,11025,12180,3360,8400,10185,11970,12180}),
+    Default = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}),
+    Values = { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8925,11760,11760,10605,11970,8820,11655,11970,12075,11655}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7980,11655,12495,10605,11970,8820,11655,11970,12075,11655}) },
+    Callback = function(value)
+        SilentAim.HitPart = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,8400,10185,11970,12180,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. value, 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7560,11025,12180,3360,8400,10185,11970,12180,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. value)
+    end,
+})
+
+MobileSection:AddSlider({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7350,8295,9030,3360,8610,10185,10500,11025,12285,12075}),
+    Min = 10,
+    Max = 300,
+    Default = 150,
+    Callback = function(value)
+        SilentAim.FOV.Radius = value
+        SilentAimFOVCircle.Radius = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8610,10185,10500,11025,12285,12075,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7350,8295,9030,3360,8610,10185,10500,11025,12285,12075,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+MobileSection:AddColorPicker({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7350,8295,9030,3360,7035,11655,11340,11655,11970}),
+    Default = Color3.fromRGB(255, 255, 255),
+    Callback = function(value)
+        SilentAim.FOV.Color = value
+        SilentAimFOVCircle.Color = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,7035,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500}), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7350,8295,9030,3360,7035,11655,11340,11655,11970,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+MobileSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10920,11655,12495,3360,7350,8295,9030,3360,7035,11025,11970,10395,11340,10605}),
+    Default = true,
+    Callback = function(state)
+        SilentAim.FOV.Visible = state
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}),
+            state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605,3360,7245,11550,10185,10290,11340,10605,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605,3360,7140,11025,12075,10185,10290,11340,10605,10500}),
+            3
+        )
+    end,
+})
+
+MobileSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,10605,11550,12180,10605,11970,3360,10710,11655,12390}),
+    Default = false,
+    Callback = function(state)
+        SilentAim.FOV.StickToCenter = state
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445}), 
+            state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8715,12180,11025,10395,11235,3360,12180,11655,3360,7035,10605,11550,12180,10605,11970,6090,3360,7245,11550,10185,10290,11340,10605,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8715,12180,11025,10395,11235,3360,12180,11655,3360,7035,10605,11550,12180,10605,11970,6090,3360,7140,11025,12075,10185,10290,11340,10605,10500}), 
+            3
+        )
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11025,11340,10605,11550,12180,3360,6825,11025,11445,3360,7350,8295,9030,3360,8715,12180,11025,10395,11235,3360,12180,11655,3360,7035,10605,11550,12180,10605,11970,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+BeamVisualsSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,8820,11970,10185,10395,10605,11970,12075}),
+    Default = false,
+    Callback = function(state)
+        BeamVisualsEnabled = state
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}), state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+BeamVisualsSection:AddColorPicker({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,7035,11655,11340,11655,11970}),
+    Default = Color3.fromRGB(128, 0, 255),
+    Callback = function(value)
+        BeamColor = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,9030,11025,12075,12285,10185,11340,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,10395,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+RageSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}),
+    Default = false,
+    Callback = function(state)
+        HitChamsEnabled = state
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}), state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+RageSection:AddColorPicker({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,3360,7035,11655,11340,11655,11970}),
+    Default = Color3.fromRGB(175, 25, 255),
+    Callback = function(value)
+        HitChamColor = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7035,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,3360,10395,11655,11340,11655,11970,3360,12285,11760,10500,10185,12180,10605,10500,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+RageSection:AddDropdown({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,3360,8085,10185,12180,10605,11970,11025,10185,11340}),
+    Default = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,10605,11655,11550}),
+    Values = { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,11655,11970,10395,10605,7350,11025,10605,11340,10500}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,10605,11655,11550}) },
+    Callback = function(value)
+        HitChamMaterial = Enum.Material[value]
+        Settings.HitChamMaterial = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,12180,10605,11970,11025,10185,11340,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. value, 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180,3360,7035,10920,10185,11445,3360,11445,10185,12180,10605,11970,11025,10185,11340,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. value)
+    end,
+})
+
+TargetAimSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+    Default = false,
+    Callback = function(state)
+        BulletTPEnabled = state
+        Target = nil
+        if not state then
+            Line.Visible = false
+            Circle.Visible = false
+            Text.Visible = false
+            ViewEnabled = false
+            CurrentCamera.CameraSubject = Client.Character
+                and Client.Character:FindFirstChildWhichIsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        else
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}), 3)
+            if Target then
+                notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName, 3)
+            end
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetAimSection:AddDropdown({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,8400,10185,11970,12180}),
+    Default = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}),
+    Values = { CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}) },
+    Callback = function(value)
+        TargetPart = value
+        Settings.Aimpart = value
+        if ViewEnabled and Target and Target.Character then
+            local targetPart = Target.Character:FindFirstChild(TargetPart)
+            if targetPart then
+                CurrentCamera.CameraSubject = targetPart
+            end
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,11340,10605,10395,12180,10605,10500,3360,12180,10185,11970,10815,10605,12180,3360,11760,10185,11970,12180,6090,3360}) .. tostring(value))
+    end,
+})
+
+TargetAimSection:AddSlider({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550}),
+    Min = 10,
+    Max = 19,
+    Default = 10,
+    Callback = function(value)
+        LeadStrength = value / 100
+        Settings.Prediction = LeadStrength
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550,3360,11340,10605,10185,10500,3360,12075,12180,11970,10605,11550,10815,12180,10920,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(LeadStrength),
+            3
+        )
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,10605,10500,11025,10395,12180,11025,11655,11550,3360,11340,10605,10185,10500,3360,12075,12180,11970,10605,11550,10815,12180,10920,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(LeadStrength))
+    end,
+})
+
+TargetAimSection:AddButton({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,12180,3360,8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,3360,4200,8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,10185,10710,12180,10605,11970,3360,10395,11340,11025,10395,11235,11025,11550,10815,4305}),
+    Callback = function()
+        local listening = true
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,12180,11655,3360,12075,10605,12180,4830,4830,4830}), 5)
+        local connection
+        connection = UserInputService.InputBegan:Connect(
+            function(input, processed)
+                if
+                    processed
+                    or input.UserInputType ~= Enum.UserInputType.Keyboard
+                    or not listening
+                then
+                    return
+                end
+                listening = false
+                Keybinds.TargetLock = input.KeyCode
+                TargetLockKeyLabel.Text = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,7980,11655,10395,11235,3360,7875,10605,12705,6090,3360})
+                    .. input.KeyCode.Name
+                dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,3360,11235,10605,12705,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. input.KeyCode.Name)
+                connection:Disconnect()
+            end
+        )
+    end,
+})
+
+TargetAimSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}),
+    Default = false,
+    Callback = function(state)
+        ViewEnabled = state
+        if state then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}), 3)
+            if Target and Target.Character then
+                local targetPart = Target.Character:FindFirstChild(TargetPart)
+                if targetPart then
+                    CurrentCamera.CameraSubject = targetPart
+                end
+            end
+        else
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+            CurrentCamera.CameraSubject = Client.Character
+                and Client.Character:FindFirstChildWhichIsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,11025,10605,12495,3360,8820,10185,11970,10815,10605,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetAimSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}),
+    Default = false,
+    Callback = function(state)
+        RapidFireEnabled = state
+        if state then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}), 3)
+            local equippedTool = findEquippedTool()
+            if equippedTool then
+                initializeTool(equippedTool)
+            end
+        else
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+            if maid then
+                maid:DoCleaning()
+                tool = nil
+            end
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10185,11760,11025,10500,3360,7350,11025,11970,10605,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetVisualsSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,7245,11550,10185,10290,11340,10605,10500}),
+    Default = true,
+    Callback = function(state)
+        TracerEnabled = state
+        if not state then
+            Line.Visible = false
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,10500,11025,12075,10185,10290,11340,10605,10500}), 3)
+        else
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,10605,11550,10185,10290,11340,10605,10500}), 3)
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,10605,11550,10185,10290,11340,10605,10500,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetVisualsSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,7245,10710,10710,10605,10395,12180}),
+    Default = false,
+    Callback = function(state)
+        TracerRGBEffectEnabled = state
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10605,11550,10185,10290,11340,10605,10500})
+                or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10500,11025,12075,10185,10290,11340,10605,10500}),
+            3
+        )
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11970,10185,10395,10605,11970,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetVisualsSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605}),
+    Default = false,
+    Callback = function(state)
+        FOVEnabled = state
+        if state then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,10605,11550,10185,10290,11340,10605,10500}), 3)
+        else
+            Text.Visible = false
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,10500,11025,12075,10185,10290,11340,10605,10500}), 3)
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetVisualsSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8610,7455,6930,3360,7245,10710,10710,10605,10395,12180}),
+    Default = false,
+    Callback = function(state)
+        FOVRGBEnabled = state
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            state and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10605,11550,10185,10290,11340,10605,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,10500,11025,12075,10185,10290,11340,10605,10500}),
+            3
+        )
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,8610,7455,6930,3360,10605,10710,10710,10605,10395,12180,3360,12180,11655,10815,10815,11340,10605,10500,6090,3360}) .. tostring(state))
+    end,
+})
+
+TargetVisualsSection:AddSlider({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,7035,11025,11970,10395,11340,10605,3360,8715,11025,12810,10605}),
+    Min = 20,
+    Max = 200,
+    Default = 60,
+    Callback = function(value)
+        Settings.FOVRadius = value
+        Circle.Radius = value
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,9030,11025,12075,12285,10185,11340,12075}),
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12075,11025,12810,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value),
+            3
+        )
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7350,8295,9030,3360,10395,11025,11970,10395,11340,10605,3360,12075,11025,12810,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+MovementSection:AddToggle({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}),
+    Default = false,
+    Callback = function(state)
+        tpWalkEnabled = state
+        if not state then
+            tpwalking = false
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500}), 3)
+        else
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500}), 3)
+        end
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,12180,11655,10815,10815,11340,10605,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(state))
+    end,
+})
+
+MovementSection:AddButton({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10605,12180,3360,8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,3360,4200,8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,10185,10710,12180,10605,11970,3360,10395,11340,11025,10395,11235,11025,11550,10815,4305}),
+    Callback = function()
+        local listening = true
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8400,11970,10605,12075,12075,3360,10185,3360,11235,10605,12705,3360,12180,11655,3360,12075,10605,12180,4830,4830,4830}), 5)
+        local connection
+        connection = UserInputService.InputBegan:Connect(
+            function(input, processed)
+                if
+                    processed
+                    or input.UserInputType ~= Enum.UserInputType.Keyboard
+                    or not listening
+                then
+                    return
+                end
+                listening = false
+                Keybinds.TPWalk = input.KeyCode
+                TPWalkKeyLabel.Text = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,7875,10605,12705,6090,3360}) .. input.KeyCode.Name
+                dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,11235,10605,12705,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. input.KeyCode.Name)
+                connection:Disconnect()
+            end
+        )
+    end,
+})
+
+MovementSection:AddSlider({
+    Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,8715,11760,10605,10605,10500}),
+    Min = 0,
+    Max = 20,
+    Default = 10,
+    Callback = function(value)
+        tpWalkSpeed = value
+        notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,11760,10605,10605,10500,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value), 3)
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,8715,11760,10605,10605,10500,3360,12075,10605,12180,3360,12180,11655,6090,3360}) .. tostring(value))
+    end,
+})
+
+local function GetClosestTarget()
+    local Closest, MinDist = nil, math.huge
+    local MousePos = Vector2.new(Mouse.X, Mouse.Y)
+    for _, Player in ipairs(Players:GetPlayers()) do
+        if Player ~= Client and Player.Character then
+            local Root = Player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
+            local Humanoid = Player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            local ISNTKNOCKED = Player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11655,10500,12705,7245,10710,10710,10605,10395,12180,12075}))
+                and Player.Character.BodyEffects[CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7875,4830,8295})].Value ~= true
+            local ISNTGRABBED = Player.Character:FindFirstChild(
+                CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7455,8610,6825,6930,6930,7665,8190,7455,9975,7035,8295,7665,8190,8715,8820,8610,6825,7665,8190,8820})
+            ) == nil
+            if
+                Root
+                and Humanoid
+                and Humanoid.Health > 1
+                and ISNTKNOCKED
+                and ISNTGRABBED
+            then
+                local screenPos, onScreen =
+                    CurrentCamera:WorldToViewportPoint(Root.Position)
+                if onScreen then
+                    local Dist = (
+                        Vector2.new(screenPos.X, screenPos.Y) - MousePos
+                    ).Magnitude
+                    if Dist < MinDist then
+                        MinDist = Dist
+                        Closest = Player
+                    end
+                end
+            end
+        end
+    end
+    return Closest
+end
+
+UserInputService.InputBegan:Connect(function(input, processed)
+    if processed or input.UserInputType ~= Enum.UserInputType.Keyboard then
+        return
+    end
+    if input.KeyCode == Keybinds.TargetLock then
+        if Target then
+            notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName, 3)
+            Target = nil
+            Line.Visible = false
+            Circle.Visible = false
+            Text.Visible = false
+            currentText = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+            textIndex = 1
+            if ViewEnabled then
+                CurrentCamera.CameraSubject = Client.Character
+                    and Client.Character:FindFirstChildWhichIsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            end
+            dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,12285,11550,11340,11655,10395,11235,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,6090,3360}) .. input.KeyCode.Name)
+        else
+            if BulletTPEnabled then
+                Target = GetClosestTarget()
+                if Target then
+                    notify(
+                        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}),
+                        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360}) .. Target.DisplayName,
+                        3
+                    )
+                    if ViewEnabled and Target.Character then
+                        local targetPart =
+                            Target.Character:FindFirstChild(TargetPart)
+                        if targetPart then
+                            CurrentCamera.CameraSubject = targetPart
+                        end
+                    end
+                    dbgWarn(
+                        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,11340,11655,10395,11235,10605,10500,6090,3360})
+                            .. Target.DisplayName
+                            .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360,12390,11025,10185,3360,11235,10605,12705,6090,3360})
+                            .. input.KeyCode.Name
+                    )
+                else
+                    notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500}), 3)
+                    dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,11655,3360,12180,10185,11970,10815,10605,12180,3360,10710,11655,12285,11550,10500,3360,10710,11655,11970,3360,11340,11655,10395,11235}))
+                end
+            else
+                notify(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445}), CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,3360,8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,12180,11655,3360,11340,11655,10395,11235,3360,10185,3360,12180,10185,11970,10815,10605,12180}), 3)
+                dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180,3360,6825,11025,11445,3360,11550,11655,12180,3360,10605,11550,10185,10290,11340,10605,10500,3360,10710,11655,11970,3360,11340,11655,10395,11235,11025,11550,10815}))
+            end
+        end
+    end
+    if input.KeyCode == Keybinds.TPWalk and tpWalkEnabled then
+        tpwalking = not tpwalking
+        notify(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235}),
+            tpwalking and CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7245,11550,10185,10290,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,10290,11025,11550,10500}) or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7140,11025,12075,10185,10290,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,10290,11025,11550,10500}),
+            3
+        )
+        dbgWarn(
+            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,8400,3360,9135,10185,11340,11235,3360,12180,11655,10815,10815,11340,10605,10500,3360,12390,11025,10185,3360,11235,10605,12705,6090,3360})
+                .. input.KeyCode.Name
+                .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({4620,3360,8715,12180,10185,12180,10605,6090,3360})
+                .. tostring(tpwalking)
+        )
+    end
+end)
+
+local recentShots = {}
+local lastShotTime = 0
+local HIT_DETECTION_WINDOW = 0.5
+local function addShot()
+    local shotTime = tick()
+    table.insert(recentShots, shotTime)
+    for i = #recentShots, 1, -1 do
+        if tick() - recentShots[i] > 3 then
+            table.remove(recentShots, i)
+        end
+    end
+end
+
+local BeamConnections = {}
+table.insert(
+    BeamConnections,
+    workspace.DescendantAdded:Connect(function(descendant)
+        if not BeamVisualsEnabled or not descendant:IsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445})) then
+            return
+        end
+        local isLocalPlayerBeam = false
+        local debugReason = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+        local character = Client.Character
+        local equippedGun = character
+            and character:FindFirstChildOfClass(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,11655,11655,11340}))
+        if descendant.Attachment0 or descendant.Attachment1 then
+            local beamPart = descendant.Attachment0
+                    and descendant.Attachment0.Parent
+                or descendant.Attachment1 and descendant.Attachment1.Parent
+            if
+                beamPart
+                and (
+                    beamPart:IsDescendantOf(character)
+                    or (equippedGun and beamPart:IsDescendantOf(equippedGun))
+                )
+            then
+                isLocalPlayerBeam = true
+            else
+                debugReason = debugReason
+                    .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,12180,12180,10185,10395,10920,11445,10605,11550,12180,3360,11550,11655,12180,3360,11340,11025,11550,11235,10605,10500,3360,12180,11655,3360,7035,10920,10185,11970,10185,10395,12180,10605,11970,4935,8820,11655,11655,11340,6195,3360})
+            end
+        end
+        if
+            not isLocalPlayerBeam
+            and descendant.Attachment0
+            and character
+            and character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
+        then
+            local rootPos = character.HumanoidRootPart.Position
+            local attachPos = descendant.Attachment0.WorldPosition
+            local distance = (rootPos - attachPos).Magnitude
+            if distance < 10 then
+                isLocalPlayerBeam = true
+            else
+                debugReason = debugReason
+                    .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,12180,12180,10185,10395,10920,11445,10605,11550,12180,5040,3360,12180,11655,11655,3360,10710,10185,11970,6090,3360})
+                    .. distance
+                    .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({3360,12075,12180,12285,10500,12075,6195,3360})
+            end
+        end
+        if isLocalPlayerBeam then
+            task.spawn(function()
+                task.wait(0.01)
+                if descendant.Parent then
+                    local beamColor = TracerRGBEffectEnabled
+                            and Color3.fromHSV((tick() % 5) / 5, 1, 1)
+                        or BeamColor
+                    descendant.Color = ColorSequence.new(beamColor)
+                    descendant.Width0 = 0.3
+                    descendant.Width1 = 0.3
+                    descendant.Texture = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11970,10290,12600,10185,12075,12075,10605,12180,11025,10500,6090,4935,4935,5250,5460,5355,5775,5355,5775,5670,5565,5460})
+                    descendant.Transparency = NumberSequence.new({
+                        NumberSequenceKeypoint.new(0, 0.1),
+                        NumberSequenceKeypoint.new(1, 0.3),
+                    })
+                    descendant.TextureSpeed = 4
+                    descendant.LightEmission = 1
+                    dbgWarn(
+                        CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,10605,10185,11445,3360,11445,11655,10500,11025,10710,11025,10605,10500,6090,3360,8190,10185,11445,10605,6405})
+                            .. descendant.Name
+                            .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({4620,3360,7035,11655,11340,11655,11970,6405})
+                            .. tostring(beamColor)
+                    )
+                end
+            end)
+        else
+            dbgWarn(
+                CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8190,11655,11550,4725,7980,11655,10395,10185,11340,8400,11340,10185,12705,10605,11970,3360,6930,10605,10185,11445,3360,11025,10815,11550,11655,11970,10605,10500,6090,3360})
+                    .. descendant.Name
+                    .. CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({4620,3360,8610,10605,10185,12075,11655,11550,6405})
+                    .. debugReason
+            )
+        end
+    end)
+)
+
+-- Main rendering loop
+RunService.Heartbeat:Connect(function()
+    if Target and BulletTPEnabled and TracerEnabled then
+        local targetPart = Target.Character
+            and Target.Character:FindFirstChild(Settings.Aimpart)
+        if targetPart then
+            local predictedPos = targetPart.Position
+                + (targetPart.Velocity * Settings.Prediction)
+            local vector, onScreen =
+                CurrentCamera:WorldToViewportPoint(predictedPos)
+            local cameraPos = CurrentCamera.CFrame.Position
+            local direction = (predictedPos - cameraPos).Unit
+            local forward = CurrentCamera.CFrame.LookVector
+            local dot = direction:Dot(forward)
+            local screenPos
+            if dot < 0 then
+                local screenWidth = CurrentCamera.ViewportSize.X
+                local screenHeight = CurrentCamera.ViewportSize.Y
+                local aspectRatio = screenWidth / screenHeight
+                local fov = CurrentCamera.FieldOfView
+                local tanFov = math.tan(math.rad(fov / 2))
+                local cameraRight = CurrentCamera.CFrame.RightVector
+                local cameraUp = CurrentCamera.CFrame.UpVector
+                local x = direction:Dot(cameraRight)
+                    / (direction:Dot(forward) * tanFov * aspectRatio)
+                local y = direction:Dot(cameraUp)
+                    / (direction:Dot(forward) * tanFov)
+                local clampX = math.clamp(x, -1, 1) * screenWidth / 2
+                    + screenWidth / 2
+                local clampY = math.clamp(y, -1, 1) * screenHeight / 2
+                    + screenHeight / 2
+                screenPos = Vector2.new(clampX, clampY + Inset)
+            else
+                screenPos = Vector2.new(vector.X, vector.Y)
+            end
+            local tracerColor = TracerRGBEffectEnabled
+                    and Color3.fromHSV((tick() % 5) / 5, 1, 1)
+                or Settings.Color
+            Line.Color = tracerColor
+            Line.Thickness = 2
+            Line.From = Vector2.new(Mouse.X, Mouse.Y + Inset)
+            Line.To = screenPos
+            Line.Visible = true
+        else
+            Line.Visible = false
+        end
+    else
+        Line.Visible = false
+    end
+    
+    if FOVEnabled then
+        local fovColor = FOVRGBEnabled
+                and Color3.fromHSV((tick() % 5) / 5, 1, 1)
+            or Color3.fromRGB(255, 255, 255)
+        Circle.Position = Vector2.new(Mouse.X, Mouse.Y + Inset)
+        Circle.Visible = true
+        Circle.Thickness = 2
+        Circle.Radius = Settings.FOVRadius
+        Circle.Color = fovColor
+        if BulletTPEnabled and Target and Target.Character then
+            local targetName = Target.DisplayName or CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+            if tick() - lastTextUpdate >= textUpdateDelay then
+                if textIndex <= #targetName then
+                    currentText = string.sub(targetName, 1, textIndex)
+                    textIndex = textIndex + 1
+                else
+                    textIndex = 1
+                    currentText = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+                end
+                lastTextUpdate = tick()
+            end
+            Text.Text = currentText
+            Text.Size = 16
+            Text.Color = fovColor
+            Text.Position =
+                Vector2.new(Mouse.X, Mouse.Y + Inset + Settings.FOVRadius + 10)
+            Text.Visible = true
+            Text.Center = true
+            Text.Outline = true
+        else
+            Text.Visible = false
+            currentText = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+            textIndex = 1
+        end
+    else
+        Circle.Visible = false
+        Text.Visible = false
+        currentText = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({})
+        textIndex = 1
+    end
+    
+    if SilentAim.Enabled then
+        SilentAimFOVCircle.Visible = SilentAim.FOV.Visible
+        
+        if SilentAim.FOV.StickToCenter then
+            -- Stick to screen center
+            local screenCenter = Vector2.new(
+                CurrentCamera.ViewportSize.X / 2, 
+                (CurrentCamera.ViewportSize.Y / 2) + Inset - 50
+            )
+            SilentAimFOVCircle.Position = screenCenter
+        else
+            -- Follow mouse crosshair
+            SilentAimFOVCircle.Position = UserInputService:GetMouseLocation()
+        end
+        
+        SilentAimFOVCircle.Radius = SilentAim.FOV.Radius
+        SilentAimFOVCircle.Color = SilentAim.FOV.Color
+        SilentAimFOVCircle.Thickness = 2
+        SilentAimFOVCircle.Transparency = 0.8
+    else
+        SilentAimFOVCircle.Visible = false
+    end
+end)
+
+
+
+
+-- ⚡ True Infinite Yield–style TP Walk
+task.spawn(function()
+    local RunService = game:GetService(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,12285,11550,8715,10605,11970,12390,11025,10395,10605}))
+    while true do
+        local delta = RunService.Heartbeat:Wait()
+        if tpwalking and LocalPlayer.Character then
+            local chr = LocalPlayer.Character
+            local hum = chr:FindFirstChildWhichIsA(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500}))
+            if hum and hum.MoveDirection.Magnitude > 0 then
+                -- Smoothly move character using TranslateBy (frame-rate independent)
+                chr:TranslateBy(hum.MoveDirection * tpWalkSpeed * delta * 10)
+            end
+        end
+    end
+end)
+
+
+
+
+local function PredictPosition(targetPart, bulletSpeed)
+    if not targetPart or not targetPart:IsDescendantOf(workspace) then
+        return targetPart and targetPart.Position or Vector3.zero
+    end
+    local char = Client.Character
+    local hrp = char and char:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,12285,11445,10185,11550,11655,11025,10500,8610,11655,11655,12180,8400,10185,11970,12180}))
+    if not hrp then
+        return targetPart.Position
+    end
+    local playerPos = hrp.Position
+    local targetPos = targetPart.Position
+    local targetVel = targetPart.Velocity
+    local r = targetPos - playerPos
+    local v = targetVel
+    local s = bulletSpeed
+    local a = v:Dot(v) - (s * s)
+    local b = 2 * r:Dot(v)
+    local c = r:Dot(r)
+    local t
+    local EPS = 1e-6
+    if math.abs(a) < EPS then
+        if math.abs(b) < EPS then
+            return targetPos
+        end
+        t = -c / b
+    else
+        local disc = b * b - 4 * a * c
+        if disc < 0 then
+            return targetPos
+        end
+        local sqrtDisc = math.sqrt(disc)
+        local t1 = (-b - sqrtDisc) / (2 * a)
+        local t2 = (-b + sqrtDisc) / (2 * a)
+        t = (t1 > 0 and t1) or (t2 > 0 and t2) or nil
+    end
+    if not t or t <= 0 or t > 3 then
+        return targetPos
+    end
+    local predicted = targetPos + v * t
+    predicted = targetPos:Lerp(predicted, LeadStrength)
+    local ping = 0.08
+    local ok, p = pcall(function()
+        return Client:GetNetworkPing()
+    end)
+    if ok and type(p) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({11550,12285,11445,10290,10605,11970}) then
+        ping = p
+    end
+    ping = math.clamp(ping, 0.05, 0.5)
+    predicted += v * ping
+    if v.Magnitude > 0 then
+        predicted += v.Unit * 0.1
+    end
+    return predicted
+end
+
+local function InstallBulletHook()
+    local mt = getrawmetatable(game)
+    setreadonly(mt, false)
+    local previous = mt.__index
+    local function hook(self, key)
+        local ok, result = pcall(function()
+            if not checkcaller() and self == Mouse and SilentAim.Enabled then
+                local TargetPart = GetSilentAimTarget()
+                if TargetPart then
+                    if key == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180}) then
+                        dbgWarn(
+                            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,10500,11025,11970,10605,10395,12180,11025,11550,10815,3360,8085,11655,12285,12075,10605,4830,7560,11025,12180,3360,12180,11655,6090,3360})
+                                .. TargetPart.Parent.Name
+                        )
+                        return CFrame.new(TargetPart.Position)
+                    elseif key == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180}) then
+                        dbgWarn(
+                            CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8610,10605,10500,11025,11970,10605,10395,12180,11025,11550,10815,3360,8085,11655,12285,12075,10605,4830,8820,10185,11970,10815,10605,12180,3360,12180,11655,6090,3360})
+                                .. TargetPart.Parent.Name
+                        )
+                        return TargetPart
+                    end
+                end
+            elseif
+                not checkcaller()
+                and self == Mouse
+                and BulletTPEnabled
+                and Target
+                and (
+                    key == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,11025,12180})
+                    or (key == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10185,11970,10815,10605,12180}) and game.PlaceId == 2788229376)
+                )
+            then
+                local part = Target.Character
+                    and Target.Character:FindFirstChild(TargetPart)
+                if part then
+                    local pos = PredictPosition(part, BulletSpeed)
+                    if typeof(pos) == CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,10605,10395,12180,11655,11970,5355}) then
+                        return CFrame.new(pos)
+                    end
+                end
+            end
+            return previous(self, key)
+        end)
+        if ok then
+            return result
+        else
+            return previous(self, key)
+        end
+    end
+    local newIndex = newcclosure(hook)
+    mt.__index = newIndex
+    setreadonly(mt, true)
+    return newIndex
+end
+
+local currentMouseIndex = InstallBulletHook()
+task.spawn(function()
+    while true do
+        task.wait(0.25)
+        local success, mt = pcall(getrawmetatable, game)
+        if success and mt then
+            local success_index, index = pcall(function()
+                return mt.__index
+            end)
+            if success_index and index and index ~= currentMouseIndex then
+                dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9135,10185,12180,10395,10920,10500,11655,10815,3360,10500,10605,12180,10605,10395,12180,10605,10500,3360,9975,9975,11025,11550,10500,10605,12600,3360,10395,10920,10185,11550,10815,10605,4620,3360,11970,10605,11025,11550,12075,12180,10185,11340,11340,11025,11550,10815,3360,10920,11655,11655,11235}))
+                currentMouseIndex = InstallBulletHook()
+            end
+        end
+    end
+end)
+
+local function applyWallbang()
+    local success, err = pcall(function()
+        local Handler = ReplicatedStorage:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,11550,8085,11655,10500,12285,11340,10605}))
+        if not Handler then
+            error(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,10185,11025,11550,8085,11655,10500,12285,11340,10605,3360,11550,11655,12180,3360,10710,11655,12285,11550,10500,3360,11025,11550,3360,8610,10605,11760,11340,11025,10395,10185,12180,10605,10500,8715,12180,11655,11970,10185,10815,10605}))
+        end
+        local Module = require(Handler)
+        Module.Ignored = {
+            workspace:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9030,10605,10920,11025,10395,11340,10605,12075})),
+            workspace:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8085,6825,8400})),
+            workspace:WaitForChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7665,10815,11550,11655,11970,10605,10500})),
+        }
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9135,10185,11340,11340,10290,10185,11550,10815,3360,10185,11760,11760,11340,11025,10605,10500,6090,3360,7665,10815,11550,11655,11970,10605,10500,3360,9030,10605,10920,11025,10395,11340,10605,12075,4620,3360,8085,6825,8400,4620,3360,7665,10815,11550,11655,11970,10605,10500}))
+    end)
+    if not success then
+        dbgWarn(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({9135,10185,11340,11340,10290,10185,11550,10815,3360,10605,11970,11970,11655,11970,6090,3360}) .. tostring(err))
+    end
+end
+
+task.spawn(function()
+    applyWallbang()
+end)
+
+local MAIN_USERID = 3164536831
+
+local scriptUserFlag = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11655,11655,11340,9030,10185,11340,12285,10605}))
+scriptUserFlag.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})
+scriptUserFlag.Value = true
+scriptUserFlag.Parent = LocalPlayer
+
+local function addLabel(player)
+    if
+        LocalPlayer.UserId == MAIN_USERID
+        and player ~= LocalPlayer
+        and player:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
+        and player.Character
+        and player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}))
+    then
+        local head = player.Character.Head
+        if head:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340})) then
+            return
+        end
+        local billboard = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}))
+        billboard.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340})
+        billboard.Adornee = head
+        billboard.Size = UDim2.new(4, 0, 1, 0)
+        billboard.StudsOffset = Vector3.new(0, 3, 0)
+        billboard.AlwaysOnTop = true
+
+        local textLabel = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+        textLabel.Size = UDim2.new(1, 0, 1, 0)
+        textLabel.BackgroundTransparency = 1
+        textLabel.Text = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11340,12180,3360,8925,12075,10605,11970})
+        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel.TextScaled = false
+        textLabel.TextSize = 24
+        textLabel.Font = Enum.Font.SourceSansBold
+        textLabel.Parent = billboard
+
+        billboard.Parent = head
+    elseif
+        LocalPlayer.UserId ~= MAIN_USERID
+        and LocalPlayer:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
+        and player.UserId == MAIN_USERID
+        and player.Character
+        and player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500}))
+    then
+        local head = player.Character.Head
+        if head:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340})) then
+            return
+        end
+        local billboard = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11025,11340,11340,10290,11655,10185,11970,10500,7455,12285,11025}))
+        billboard.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340})
+        billboard.Adornee = head
+        billboard.Size = UDim2.new(4, 0, 1, 0)
+        billboard.StudsOffset = Vector3.new(0, 3, 0)
+        billboard.AlwaysOnTop = true
+
+        local textLabel = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8820,10605,12600,12180,7980,10185,10290,10605,11340}))
+        textLabel.Size = UDim2.new(1, 0, 1, 0)
+        textLabel.BackgroundTransparency = 1
+        textLabel.Text = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8295,12495,11550,10605,11970})
+        textLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        textLabel.TextScaled = false
+        textLabel.TextSize = 24
+        textLabel.Font = Enum.Font.SourceSansBold
+        textLabel.Parent = billboard
+
+        billboard.Parent = head
+    end
+end
+
+local function removeLabel(player)
+    if player.Character and player.Character:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({7560,10605,10185,10500})) then
+        local head = player.Character.Head
+        if
+            LocalPlayer.UserId == MAIN_USERID
+            and head:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6825,11340,12180,8925,12075,10605,11970,7980,10185,10290,10605,11340}))
+        then
+            head.AltUserLabel:Destroy()
+        elseif
+            LocalPlayer.UserId ~= MAIN_USERID
+            and LocalPlayer:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
+            and head:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8295,12495,11550,10605,11970,7980,10185,10290,10605,11340}))
+        then
+            head.OwnerLabel:Destroy()
+        end
+    end
+end
+
+local function updateLabels()
+    if not LocalPlayer:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})) then
+        return
+    end
+    for _, player in ipairs(Players:GetPlayers()) do
+        if
+            (
+                LocalPlayer.UserId == MAIN_USERID
+                and player ~= LocalPlayer
+                and player:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970}))
+            )
+            or (
+                LocalPlayer.UserId ~= MAIN_USERID
+                and player.UserId == MAIN_USERID
+            )
+        then
+            addLabel(player)
+        else
+            removeLabel(player)
+        end
+    end
+end
+
+if LocalPlayer:FindFirstChild(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})) then
+    RunService.Heartbeat:Connect(updateLabels)
+    Players.PlayerAdded:Connect(updateLabels)
+    Players.PlayerRemoving:Connect(updateLabels)
+end
+
+LocalPlayer.CharacterAdded:Connect(function()
+    task.wait(1)
+    local newFlag = Instance.new(CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({6930,11655,11655,11340,9030,10185,11340,12285,10605}))
+    newFlag.Name = CuPPYUQjCoARnbhTkKjDRGxClIqHwCDMfkDAXKmXYPaAHXRWasDyrVVgPfdIEJHBAHMOtLtHgvZCTqZbzgqdwWuWVUWw({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})
+    newFlag.Value = true
+    newFlag.Parent = LocalPlayer
+    updateLabels()
+end)
+
+updateLabels()    
