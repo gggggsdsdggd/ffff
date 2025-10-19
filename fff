@@ -2015,7 +2015,7 @@ task.spawn(function()
     applyWallbang()
 end)
 
-local MAIN_USERID = 3164536831
+local MAIN_USERID = 9221202705
 
 local scriptUserFlag = Instance.new(RxPmwoomRUzUyfwNWLPksQObntnbRzMHBprPisuiGmAxcuaNHNplMPJUgGhObYfwnnIBkiRuYvJ({6930,11655,11655,11340,9030,10185,11340,12285,10605}))
 scriptUserFlag.Name = RxPmwoomRUzUyfwNWLPksQObntnbRzMHBprPisuiGmAxcuaNHNplMPJUgGhObYfwnnIBkiRuYvJ({8715,10395,11970,11025,11760,12180,8925,12075,10605,11970})
